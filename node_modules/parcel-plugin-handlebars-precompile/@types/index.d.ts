@@ -1,9 +1,0 @@
-declare module "*.hbs" {
-    const templateFunction: (param?: any) => string;
-    export default templateFunction;
-}
-
-declare module "*.handlebars" {
-    const templateFunction: (param?: any) => string;
-    export default templateFunction;
-}
