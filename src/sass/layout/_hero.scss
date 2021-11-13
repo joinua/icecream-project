@@ -1,8 +1,29 @@
 .hero {
   max-width: 1280px;
   height: 502px;
+  padding-top: 131px;
+  padding-bottom: 160px;
+  padding-left: 20px;
   background-color: #ffb8ca;
   background-image: url('/images/Hero/hero-ellipse-1x.png');
   background-repeat: no-repeat;
   background-position: right;
+  text-align: left;
+}
+
+.hero__title {
+  max-width: 218px;
+
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  &--color-pink {
+    font-size: 48px;
+    line-height: 0.958;
+    color: #d41443;
+  }
 }
