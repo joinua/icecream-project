@@ -1,3 +1,8 @@
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
 .logo-nav {
   padding-top: 6px;
   display: flex;
@@ -8,4 +13,43 @@
   top: 25px;
   right: 20px;
   background-color: transparent;
+  cursor: pointer;
+  border: none;
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+.header-nav {
+  display: flex;
+  @media screen and (max-width: 1280px) {
+    display: none;
+  }
+}
+.header-nav__item:not(:last-child) {
+  margin-right: 35px;
+}
+.header-nav__link {
+  display: block;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: $primary-button;
+  &:hover,
+  &:focus {
+    color: $crimson-text;
+  }
+}
+.header-button {
+  background-color: $primary-button;
+  border-radius: 22px;
+  width: 159px;
+  height: 44px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.button-text {
+  color: $crimson-text;
 }

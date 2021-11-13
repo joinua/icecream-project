@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Заголовок страницы</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Заголовок страницы</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Titan+One&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-    crossorigin="anonymous" />
-</head>
-
-<body>
-  <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-  <header>
-    <include src="./partials/header.html"></include>
-  </header>
-  <main>
-    <include src="./partials/hero.html"></include>
-    <include src="./partials/products.html"></include>
-    <include src="./partials/about.html"></include>
-    <include src="./partials/advantages.html"></include>
-    <include src="./partials/gallery.html"></include>
-    <include src="./partials/customer-reviews.html"></include>
-    <include src="./partials/contacts.html"></include>
-    <!-- модальне вікно -->
-    <include src="./partials/modal.html"></include>
-  </main>
-  <footer>
-    <include src="./partials/footer.html"></include>
-  </footer>
-
-
-  <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-  <script src="./index.js"></script>
-</body>
-
+  <body>
+    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+    <header>
+      <include src="./partials/header.html"></include>
+    </header>
+    <main>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/products.html"></include>
+      <include src="./partials/about.html"></include>
+      <include src="./partials/advantages.html"></include>
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/customer-reviews.html"></include>
+      <include src="./partials/contacts.html"></include>
+    </main>
+    <footer>
+      <include src="./partials/footer.html"></include>
+    </footer>
+<!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
 </html>

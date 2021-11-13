@@ -1,8 +1,17 @@
 <!-- Блок герой -->
 <section class="hero">
   <h1 class="hero__title">ice cream made with <span class="hero__title--color-pink">passion</span></h1>
-  <ul>
-    <li><a href="">Products</a></li>
-    <li><a href="">How it’s made?</a></li>
+  <ul class="hero__list">
+    <li><a href="" class="btn btn--products">Products</a></li>
+    <li><a href="" class="btn btn--about">How it’s made?</a></li>
   </ul>
+  <picture>
+    <source srcset="/images/Hero/hero-icecream-desktop-1x.png 1x, /images/Hero/hero-icecream-desktop-2x.png 2x"
+      media="(min-width: 1200px)">
+    <source srcset="/images/Hero/hero-icecream-tab-1x.png 1x, /images/Hero/hero-icecream-tab-2x.png 2x"
+      media="(min-width: 768px)">
+    <source srcset="/images/Hero/hero-icecream-mob-1x.png 1x, /images/Hero/hero-icecream-mob-2x.png 2x"
+      media="(max-width: 767px)">
+    <img class="hero__img-icecream" src="/images/Hero/hero-icecream-mob-1x.png" alt="icecream">
+  </picture>
 </section>
