@@ -1,6 +1,20 @@
+.contacts {
+  background: #fff5f6;
+  position: relative;
+  // padding-top: 715px;
+  // padding-bottom: 715px;
+}
+
 .contacts__list {
-  padding-left: 50px;
-  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  // position: absolute;
+  // top: center;
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // margin-right: -50%;
+  // transform: translate(-50%, -50%);
 }
 
 .contacts__item {
