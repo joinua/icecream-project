@@ -1,0 +1,49 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    // left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    // box-shadow: 0px 4px 4px rgba(107, 80, 80, 0.322);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // transition: opacity 250ms var(--timing-function),
+    // visibility 250ms var(--timing-function);
+    // &.is-hidden {
+    //   visibility: hidden;
+    //   opacity: 0;
+    //   pointer-events: none;
+    //   .modal {
+    //     transform: scale(0.5);
+    //   }
+    // }
+    // overflow-y: scroll;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    position: relative;
+    max-width: 320px;
+    width: 100%;
+    min-height: 502px;
+    background-color: #E17992;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+
+.modal__close-icon {
+    position: absolute;
+    top: 23px;
+    right: 28px;
+    width: 15px;
+    height: 15px;
+}

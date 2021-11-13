@@ -1,20 +1,12 @@
 <div class="container">
-    <nav>
+    <nav class="nav">
         <a href="#" class="logo-nav">
             <img srcset="./images/Hero/logo-mob-1x.png 1x,
                 ./images/Hero/logo-mob-2x.png 2x"
                 src="./images/Hero/logo-mob-1x.png" 
                 alt="Logo1x">
         </a>
-                <div class="menu">
-            <button class="menu__toggle">
-                <svg width="20" height="12">
-                    <use href="./images/svg/symbol-defs.svg#icon-burger">
-                    </use>
-                </svg>
-            </button>
-        </div>
-        <ul class="header-nav">
+            <ul class="header-nav">
             <li class="header-nav__item">
                 <a href="#" class="header-nav__link">Home</a>
             </li>
@@ -31,7 +23,13 @@
                 <a href="" class="header-nav__link">Contact</a>
             </li>
         </ul>
-        <button class="header-button" type="button">
+      <div class="menu">
+        <button class="menu__toggle">
+          <svg width="20" height="12">
+            <use href="./images/svg/symbol-defs.svg#icon-burger"></use>
+                </svg>
+            </button>
+        </div><button class="header-button" data-modal-open type="button">
             <span class="button-text">Buy now</span>
         </button>
     </nav>
