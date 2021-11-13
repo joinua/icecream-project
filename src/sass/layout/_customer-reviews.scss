@@ -7,14 +7,17 @@
   }
 
   &__comment {
-    padding: 43px 50px 26px 50px;
+    padding: 0 50px 26px 50px;
     background-color: #fafafa;
     margin-bottom: 30px;
   }
 
   &__text {
     display: block;
+    padding-top: 43px;
     padding-bottom: 10px;
+    position: relative;
+    z-index: 3;
 
     font-weight: 500;
     font-size: 12px;
@@ -23,13 +26,15 @@
     color: #000000;
 
     background-image: repeating-linear-gradient(
-      to bottom,
-      transparent,
-      transparent 30px,
-      #e1e1e1 30px,
-      #e1e1e1 31px
-    );
-    background-position-y: -5px;
+        to bottom,
+        transparent,
+        transparent 30px,
+        #e1e1e1 30px,
+        #e1e1e1 31px
+      ),
+      url(/images/Customers/breckets.png);
+    background-repeat: no-repeat;
+    background-position-y: 38px, 29px;
   }
 
   &__poits {
