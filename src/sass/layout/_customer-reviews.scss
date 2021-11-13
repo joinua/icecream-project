@@ -108,12 +108,12 @@
   }
 
   &__prev-btn {
-    left: 40%;
+    left: calc((100% - 120px) / 2);
     transform: rotate(180deg);
   }
 
   &__next-btn {
-    right: 40%;
+    right: calc((100% - 120px) / 2);
   }
 
   &__nav-btns {
