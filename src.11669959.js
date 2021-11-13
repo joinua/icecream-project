@@ -7,4 +7,4 @@ var r=1,t=$("#slidewrapper").children().length,e=0,a=0;function s(){r==t||r<=0||
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/slider.js"),require("./js/modal.js");
 },{"./sass/main.scss":"clu1","./js/slider.js":"wzuc","./js/modal.js":"RSqK"}]},{},["Focm"], null)
-//# sourceMappingURL=/icecream-project/src.3db48e1e.js.map
+//# sourceMappingURL=/icecream-project/src.11669959.js.map
