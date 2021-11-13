@@ -4,7 +4,14 @@
   box-sizing: border-box;
 }
 
-body,
+body {
+  background-color: #ffffff;
+  font-family: DM Sans, sans-serif;
+  letter-spacing: 0.04em;
+
+  overflow-x: hidden;
+}
+
 html {
   overflow-x: hidden;
 }
