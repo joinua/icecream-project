@@ -13,7 +13,6 @@
 
   @media screen and (min-width: 768px) {
     height: 399px;
-    // background-position: 70% center;
   }
 
   @media screen and (min-width: 1200px) {
@@ -75,7 +74,7 @@
 .hero__img-icecream {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 32px;
   z-index: 1;
 
   // @media screen and (min-width: 768px) {
@@ -90,4 +89,8 @@
   z-index: 1;
 
   transform: translateY(-50%);
+
+  @media screen and (min-width: 768px) {
+    right: 18%;
+  }
 }
