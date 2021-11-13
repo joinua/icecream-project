@@ -1,4 +1,6 @@
 .hero {
+  position: relative;
+
   max-width: 1280px;
   height: 502px;
   margin: 0 auto;
@@ -8,11 +10,53 @@
   background-color: #ffb8ca;
   background-image: url('/images/Hero/hero-ellipse-1x.png');
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right center;
   text-align: left;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('/images/Hero/hero-ellipse-2x.png');
+  }
+
+  @media screen and (min-width: 480px) {
+    background-image: url('/images/Hero/hero-ellipse-tab-1x.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('/images/Hero/hero-ellipse-tab-2x.png');
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 399px;
+    background-image: url('/images/Hero/hero-ellipse-tab-1x.png');
+    background-position: 70% center;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('/images/Hero/hero-ellipse-tab-2x.png');
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 665px;
+    background-image: url('/images/Hero/hero-ellipse-desktop-1x.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('/images/Hero/hero-ellipse-desktop-2x.png');
+    }
+  }
 }
 
 .hero__title {
+  position: relative;
+  z-index: 2;
+
   max-width: 218px;
 
   font-family: Titan One;
@@ -30,6 +74,9 @@
 }
 
 .hero__list {
+  position: absolute;
+  z-index: 2;
+
   display: flex;
   margin-top: 19px;
 }
@@ -55,4 +102,15 @@
     background-color: #d41443;
     color: #ffffff;
   }
+}
+
+.hero__img-icecream {
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+  z-index: 1;
+
+  // @media screen and (min-width: 768px) {
+  //   left: 70%;
+  // }
 }
