@@ -74,12 +74,16 @@
 .hero__img-icecream {
   position: absolute;
   bottom: 0;
-  right: 32px;
+  right: 10%;
   z-index: 1;
 
-  // @media screen and (min-width: 768px) {
-  //   right: 247px;
-  // }
+  @media screen and (min-width: 768px) {
+    right: 32%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    right: 35%;
+  }
 }
 
 .hero__img-ellipse {
@@ -92,5 +96,9 @@
 
   @media screen and (min-width: 768px) {
     right: 18%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    right: 21%;
   }
 }
