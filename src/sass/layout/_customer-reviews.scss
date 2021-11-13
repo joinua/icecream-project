@@ -1,138 +1,150 @@
-.rewiev {
-  padding: 80px 20px 86px 20px;
+// .rewiev {
+//   padding: 80px 20px 86px 20px;
 
-  &__wievport {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    user-select: none;
-    padding-bottom: 5px;
-  }
+//   &__wievport {
+//     position: relative;
+//     width: 100%;
+//     overflow: hidden;
+//     user-select: none;
+//     padding-bottom: 5px;
+//   }
 
-  &__slidewrapper {
-    position: relative;
-    display: flex;
-    flex-wrap: nowrap;
-    width: calc(100% * 3);
-    top: 0;
-    left: 0;
-    transition: 500ms;
-    transition-timing-function: ease-in-out;
-  }
+//   &__slidewrapper {
+//     position: relative;
+//     display: flex;
+//     flex-wrap: nowrap;
+//     width: calc(100% * 3);
+//     top: 0;
+//     left: 0;
+//     transition: 500ms;
+//     transition-timing-function: ease-in-out;
+//   }
 
-  &__slide {
-    width: calc(100% / 3);
-  }
+//   &__slide {
+//     width: calc(100% / 3);
+//   }
 
-  &__img {
-    margin: 0 auto;
-    margin-bottom: 30px;
-  }
+//   &__img {
+//     margin: 0 auto;
+//     margin-bottom: 30px;
+//   }
 
-  &__comment {
-    padding: 0 50px 26px 50px;
-    background-color: #fafafa;
-    margin-bottom: 30px;
-  }
+//   &__comment {
+//     position: relative;
+//     padding: 43px 50px 26px 50px;
+//     background-color: #fafafa;
+//     margin-bottom: 30px;
 
-  &__text {
-    display: block;
-    padding-top: 43px;
-    padding-bottom: 10px;
-    position: relative;
-    z-index: 3;
+//     &::before {
+//       content: '';
+//       display: block;
+//       position: absolute;
+//       z-index: 1;
+//       top: 28px;
+//       left: 54px;
+//       width: 54px;
+//       height: 40px;
+//       background-image: url(/images/Customers/breckets.png);
+//       background-repeat: no-repeat;
+//     }
+//   }
 
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 2.55;
-    text-align: center;
-    color: #000000;
+//   &__text {
+//     display: block;
+//     padding-bottom: 10px;
+//     position: relative;
+//     z-index: 10;
 
-    background-image: repeating-linear-gradient(
-        to bottom,
-        transparent,
-        transparent 29px,
-        #e1e1e1 29px,
-        #e1e1e1 30px
-      ),
-      url(/images/Customers/breckets.png);
-    background-repeat: no-repeat;
-    background-position-y: 38px, 29px;
-  }
+//     font-weight: 500;
+//     font-size: 12px;
+//     line-height: 2.55;
+//     text-align: center;
+//     color: #000000;
 
-  &__poits {
-    position: relative;
-    display: block;
-    height: 4px;
-    width: 4px;
-    background-color: #c7133e;
-    margin: 0 auto;
-    margin-bottom: 18px;
-    border-radius: 50%;
+//     background-image: repeating-linear-gradient(
+//       to bottom,
+//       transparent,
+//       transparent 29px,
+//       #e1e1e1 29px,
+//       #e1e1e1 30px
+//     );
+//     background-repeat: no-repeat;
+//     background-position-y: -2px;
+//   }
 
-    &::after,
-    &::before {
-      position: absolute;
-      display: block;
-      content: '';
-      display: block;
-      width: 4px;
-      height: 4px;
-      background-color: #c7133e;
-      border-radius: 50%;
-    }
+//   &__poits {
+//     position: relative;
+//     display: block;
+//     height: 4px;
+//     width: 4px;
+//     background-color: #c7133e;
+//     margin: 0 auto;
+//     margin-bottom: 18px;
+//     border-radius: 50%;
 
-    &::after {
-      right: -14px;
-    }
+//     &::after,
+//     &::before {
+//       position: absolute;
+//       display: block;
+//       content: '';
+//       display: block;
+//       width: 4px;
+//       height: 4px;
+//       background-color: #c7133e;
+//       border-radius: 50%;
+//     }
 
-    &::before {
-      left: -14px;
-    }
-  }
+//     &::after {
+//       right: -14px;
+//     }
 
-  &__location {
-    text-align: center;
-    margin-bottom: 30px;
-  }
+//     &::before {
+//       left: -14px;
+//     }
+//   }
 
-  &__prev-btn,
-  &__next-btn {
-    position: absolute;
-    border-radius: 50%;
-    bottom: 0;
+//   &__location {
+//     text-align: center;
+//     margin-bottom: 30px;
+//   }
 
-    &:hover {
-      cursor: pointer;
-    }
-  }
+//   &__prev-btn,
+//   &__next-btn {
+//     position: absolute;
+//     border-radius: 50%;
+//     bottom: 0;
 
-  &__prev-btn {
-    left: calc((100% - 120px) / 2);
-    transform: rotate(180deg);
-  }
+//     &:hover {
+//       cursor: pointer;
+//     }
+//   }
 
-  &__next-btn {
-    right: calc((100% - 120px) / 2);
-  }
+//   &__prev-btn {
+//     left: calc((100% - 120px) / 2);
+//     transform: rotate(180deg);
+//   }
 
-  &__nav-btns {
-    display: flex;
-    justify-content: center;
-  }
+//   &__next-btn {
+//     right: calc((100% - 120px) / 2);
+//   }
 
-  &__slide-nav-btn {
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    background-color: #d9d9d9;
+//   &__nav-btns {
+//     display: flex;
+//     justify-content: center;
+//   }
 
-    &:not(:last-child) {
-      margin-right: 18px;
-    }
+//   &__slide-nav-btn {
+//     height: 12px;
+//     width: 12px;
+//     border-radius: 50%;
+//     background-color: #d9d9d9;
 
-    &:hover {
-      cursor: pointer;
-    }
-  }
-}
+//     &:not(:last-child) {
+//       margin-right: 18px;
+//     }
+
+//     &:hover {
+//       cursor: pointer;
+//     }
+//   }
+// }
