@@ -162,6 +162,10 @@
     left: 32px;
     z-index: 2;
   }
+
+  @media screen and (min-width: 1200px) {
+    left: 77px;
+  }
 }
 
 .hero__img-girl {
@@ -174,5 +178,69 @@
     bottom: 0;
     right: 34px;
     z-index: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    right: 109px;
+  }
+}
+
+.hero-numbers {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  position: absolute;
+  z-index: 2;
+  top: 96px;
+  right: 44px;
+
+  @media screen and (min-width: 1200px) {
+    top: 158px;
+    right: 97px;
+  }
+}
+
+.hero-numbers__item {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 13px;
+
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+  color: #ffffff;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.286;
+  }
+}
+
+.hero-numbers__number {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 13px;
+
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+    line-height: 1.15;
   }
 }
