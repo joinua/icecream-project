@@ -1,0 +1,145 @@
+.products {
+  padding-top: 121px;
+  padding-bottom: 98px;
+}
+
+.products__pretitle {
+  font-family: Titan One;
+  @include font(400, 18px, 21px, 0, uppercase, $pink-text);
+  text-align: center;
+
+  margin-bottom: 15px;
+}
+
+.products__title {
+  font-family: Titan One;
+  @include font(400, 34px, 39px, 0.04em, uppercase, $crimson-text);
+  text-align: center;
+
+  margin-bottom: 144px;
+}
+
+$colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg);
+
+.products-cards__item {
+  min-width: 280px;
+  min-height: 485px;
+
+  padding: 161px 40px 41px 40px;
+
+  border-radius: 24px;
+
+  text-align: center;
+
+  position: relative;
+
+  background-color: rebeccapurple;
+
+  &:not(:last-child) {
+    margin-bottom: 130px;
+  }
+}
+
+.products-cards__item--cream {
+  &::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+
+    left: 0px;
+    top: -113px;
+
+    width: 100%;
+    height: 252px;
+
+    background-image: url('/images/Products/products-icecream-mob-1x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.products-cards__item--coffee {
+  &::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+
+    left: 0px;
+    top: -113px;
+
+    width: 100%;
+    height: 252px;
+
+    background-image: url('/images/Products/products-icecoffee-mob-1x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.products-cards__item--milkshakes {
+  &::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+
+    left: 0px;
+    top: -113px;
+
+    width: 100%;
+    height: 252px;
+
+    background-image: url('/images/Products/products-milkshakes-mob-1x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@each $id, $colorList in $colors {
+  .products-cards__item--#{$id} {
+    background-color: #{$colorList};
+  }
+}
+
+.products-cards__title {
+  font-family: Titan One;
+  @include font(400, 20px, 23px, 0.04em, uppercase, $white-text);
+
+  margin-bottom: 68px;
+
+  position: relative;
+
+  &::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+
+    left: 0px;
+    top: 53px;
+
+    width: 100%;
+    height: 6px;
+
+    background-image: url('/images/Products/ellipsis.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.products-cards__text {
+  @include font(700, 14px, 21px, 0.04em, uppercase, $white-text);
+
+  margin-bottom: 30px;
+}
+
+.products-cards__btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background-color: $white-text;
+
+  &:hover,
+  &:focus {
+    background-color: $products-button;
+  }
+}
