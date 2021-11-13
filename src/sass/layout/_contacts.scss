@@ -21,10 +21,62 @@
   text-transform: uppercase;
   text-align: center;
 
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+
   margin-bottom: 25px;
 }
 
 .shop__type--style {
-    width: 130px;
-    background: $milkshakes-bcg;
+  width: 130px;
+  background: $milkshakes-bcg;
+}
+
+.shop__place {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: $black;
+}
+
+.shop__description {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $coffee-text;
+
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.shop__schedule {
+  padding-bottom: 25px;
+  margin-bottom: 25;
+
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.shop__thumb {
+  margin-bottom: 11px;
+}
+
+.shop__day {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: $black;
+}
+
+.shop__time {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: $pink-text;
 }
