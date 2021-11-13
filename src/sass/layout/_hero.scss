@@ -152,15 +152,27 @@
 }
 
 .hero__img-milk {
-  position: absolute;
-  bottom: 28px;
-  left: 32px;
-  z-index: 2;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    bottom: 28px;
+    left: 32px;
+    z-index: 2;
+  }
 }
 
 .hero__img-girl {
-  position: absolute;
-  bottom: 0;
-  right: 34px;
-  z-index: 2;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    bottom: 0;
+    right: 34px;
+    z-index: 2;
+  }
 }
