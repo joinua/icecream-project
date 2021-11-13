@@ -4,7 +4,7 @@
   max-width: 1280px;
   height: 502px;
   margin: 0 auto;
-  padding-top: 131px;
+  padding-top: 193px;
   padding-right: 32px;
   padding-bottom: 160px;
   padding-left: 20px;
@@ -13,10 +13,18 @@
 
   @media screen and (min-width: 768px) {
     height: 399px;
+    padding-top: 102px;
+    padding-right: 34px;
+    padding-bottom: 28px;
+    padding-left: 34px;
   }
 
   @media screen and (min-width: 1200px) {
     height: 665px;
+    padding-top: 171px;
+    padding-right: 97px;
+    padding-bottom: 45px;
+    padding-left: 77px;
   }
 }
 
