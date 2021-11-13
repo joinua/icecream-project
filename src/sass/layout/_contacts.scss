@@ -1,0 +1,30 @@
+.contacts__list {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contacts__item {
+  width: 220px;
+  background: $white-text;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  padding: 43px 20px;
+}
+
+.shop__type {
+  width: 80px;
+  height: 16px;
+
+  background: $coffe-bcg;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-align: center;
+
+  margin-bottom: 25px;
+}
+
+.shop__type--style {
+    width: 130px;
+    background: $milkshakes-bcg;
+}
