@@ -1,46 +1,36 @@
 .rewiev {
   padding: 80px 20px 86px 20px;
 
-  &__wievport {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    user-select: none;
-    padding-bottom: 5px;
-  }
-
-  &__slidewrapper {
-    position: relative;
-    display: flex;
-    flex-wrap: nowrap;
-    width: calc(100% * 3);
-    top: 0;
-    left: 0;
-    transition: 500ms;
-    transition-timing-function: ease-in-out;
-  }
-
-  &__slide {
-    width: calc(100% / 3);
-  }
-
   &__img {
     margin: 0 auto;
     margin-bottom: 30px;
   }
 
   &__comment {
-    padding: 0 50px 26px 50px;
+    position: relative;
+    padding: 43px 50px 26px 50px;
     background-color: #fafafa;
     margin-bottom: 30px;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 28px;
+      left: 54px;
+      width: 54px;
+      height: 40px;
+      background-image: url(/images/Customers/breckets.png);
+      background-repeat: no-repeat;
+    }
   }
 
   &__text {
     display: block;
-    padding-top: 43px;
     padding-bottom: 10px;
     position: relative;
-    z-index: 3;
+    z-index: 10;
 
     font-weight: 500;
     font-size: 12px;
@@ -49,15 +39,14 @@
     color: #000000;
 
     background-image: repeating-linear-gradient(
-        to bottom,
-        transparent,
-        transparent 29px,
-        #e1e1e1 29px,
-        #e1e1e1 30px
-      ),
-      url(/images/Customers/breckets.png);
+      to bottom,
+      transparent,
+      transparent 29px,
+      #e1e1e1 29px,
+      #e1e1e1 30px
+    );
     background-repeat: no-repeat;
-    background-position-y: 38px, 29px;
+    background-position-y: -2px;
   }
 
   &__poits {
@@ -96,43 +85,69 @@
     margin-bottom: 30px;
   }
 
-  &__prev-btn,
-  &__next-btn {
-    position: absolute;
-    border-radius: 50%;
-    bottom: 0;
-
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
-  &__prev-btn {
-    left: 40%;
-    transform: rotate(180deg);
-  }
-
-  &__next-btn {
-    right: 40%;
-  }
-
-  &__nav-btns {
-    display: flex;
-    justify-content: center;
-  }
-
-  &__slide-nav-btn {
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    background-color: #d9d9d9;
-
-    &:not(:last-child) {
-      margin-right: 18px;
+  .slick {
+    &-slider {
+      position: relative;
     }
 
-    &:hover {
-      cursor: pointer;
+    &-list {
+      overflow: hidden;
+    }
+
+    &-track {
+      display: flex;
+    }
+
+    &-dots {
+      display: flex;
+      justify-content: center;
+
+      & li {
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        background-color: #d9d9d9;
+        font-size: 0;
+
+        &:not(:last-child) {
+          margin-right: 18px;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &.slick-active {
+          background-image: url(/images/Customers/vector.png);
+        }
+      }
+    }
+
+    &-arrow {
+      position: absolute;
+      border-radius: 50%;
+      bottom: -2px;
+      background-color: transparent;
+      outline: none;
+      background-image: url(/images/Customers/vector1.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      font-size: 0;
+      height: 15px;
+      width: 10px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &-prev {
+      left: calc((100% - 120px) / 2);
+      transform: rotate(180deg);
+    }
+
+    &-next {
+      right: calc((100% - 120px) / 2);
     }
   }
 }
