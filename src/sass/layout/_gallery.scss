@@ -1,0 +1,25 @@
+.gallery {
+  height: 219px;
+  @include section(97px, 0);
+  background-image: linear-gradient(to bottom, $secondary-bcg 66.2%, $main-bcg 66.2%);
+
+  @media screen and(min-width:768px) {
+    height: 404px;
+    @include section(140px, 0);
+    background-image: linear-gradient(to bottom, $secondary-bcg 60.9%, $main-bcg 60.9%);
+  }
+
+  @media screen and(min-width:1280px) {
+    height: 569px;
+    @include section(139px, 0);
+    background-image: linear-gradient(to bottom, $secondary-bcg 54.5%, $main-bcg 54.5%);
+  }
+}
+
+.is-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
