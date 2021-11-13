@@ -1,6 +1,7 @@
 .backdrop {
     position: fixed;
     top: 0;
+    z-index: 2;
     // left: 0;
     width: 100vw;
     height: 100vh;
@@ -22,6 +23,12 @@
     // overflow-y: scroll;
 }
 
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
 .modal {
     position: relative;
     max-width: 320px;
@@ -29,6 +36,7 @@
     min-height: 502px;
     background-color: #E17992;
     border-radius: 10px;
+    z-index: 2;
 }
 
 
