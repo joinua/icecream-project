@@ -1,13 +1,15 @@
-.contacts {
+.contacts__list {
   padding-left: 50px;
   padding-right: 50px;
 }
 
-.contacts__list {
+.contacts__item {
   width: 220px;
-  background: #ffffff;
+  background: $white-text;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
   padding: 43px 20px;
 }
+
+
