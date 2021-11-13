@@ -102,3 +102,17 @@
     right: 21%;
   }
 }
+
+.hero__img-milk {
+  position: absolute;
+  bottom: 28px;
+  left: 32px;
+  z-index: 2;
+}
+
+.hero__img-girl {
+  position: absolute;
+  bottom: 0;
+  right: 34px;
+  z-index: 2;
+}
