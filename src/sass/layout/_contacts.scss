@@ -10,21 +10,24 @@
   border-radius: 24px;
 
   padding: 43px 20px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .shop__type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 80px;
   height: 16px;
 
   background: $coffe-bcg;
   border-radius: 4px;
-  text-transform: uppercase;
-  text-align: center;
 
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.83;
-  letter-spacing: 0.04em;
+  @include font(500, 12px, 22px, 0.04em, uppercase, $main-bcg);
 
   margin-bottom: 25px;
 }
@@ -37,28 +40,21 @@
 .shop__place {
   margin-bottom: 10px;
 
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.83;
-  letter-spacing: 0.04em;
-  color: $black;
+  @include font(500, 12px, 22px, 0.04em, none, $black);
 }
 
 .shop__description {
   padding-bottom: 25px;
   margin-bottom: 25px;
 
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.5;
-  color: $coffee-text;
+  @include font(500, 12px, 18px, normal, none, $coffee-text);
 
   border-bottom: 1px solid #e1e1e1;
 }
 
 .shop__schedule {
   padding-bottom: 25px;
-  margin-bottom: 25;
+  margin-bottom: 25px;
 
   border-bottom: 1px solid #e1e1e1;
 }
@@ -68,15 +64,14 @@
 }
 
 .shop__day {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.83;
-  color: $black;
+  @include font(500, 12px, 22px, normal, none, $black);
 }
 
 .shop__time {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.83;
-  color: $pink-text;
+  @include font(500, 12px, 22px, normal, none, $pink-text);
+}
+
+.contacts__link {
+  @include font(500, 12px, 18px, normal, none, #907e82);
+  font-style: normal;
 }
