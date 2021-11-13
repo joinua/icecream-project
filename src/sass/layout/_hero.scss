@@ -1,6 +1,7 @@
 .hero {
   max-width: 1280px;
   height: 502px;
+  margin: 0 auto;
   padding-top: 131px;
   padding-bottom: 160px;
   padding-left: 20px;
@@ -25,5 +26,33 @@
     font-size: 48px;
     line-height: 0.958;
     color: #d41443;
+  }
+}
+
+.hero__list {
+  display: flex;
+  margin-top: 19px;
+}
+
+.btn {
+  display: block;
+  border-radius: 20px;
+  padding: 9px 15px;
+  min-width: 62px;
+
+  background-color: #ffffff;
+  color: #d41443;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: center;
+  cursor: pointer;
+
+  &--products {
+    margin-right: 8px;
+
+    background-color: #d41443;
+    color: #ffffff;
   }
 }
