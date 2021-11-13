@@ -12,4 +12,19 @@
   padding: 43px 20px;
 }
 
+.shop__type {
+  width: 80px;
+  height: 16px;
 
+  background: $coffe-bcg;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-align: center;
+
+  margin-bottom: 25px;
+}
+
+.shop__type--style {
+    width: 130px;
+    background: $milkshakes-bcg;
+}
