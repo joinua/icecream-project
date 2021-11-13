@@ -5,4 +5,4 @@ var r=1,t=$("#slidewrapper").children().length,e=0,a=0;function s(){r==t||r<=0||
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/slider.js");
 },{"./sass/main.scss":"clu1","./js/slider.js":"wzuc"}]},{},["Focm"], null)
-//# sourceMappingURL=/icecream-project/src.21dfe11e.js.map
+//# sourceMappingURL=/icecream-project/src.9c5fa297.js.map
