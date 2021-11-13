@@ -1,6 +1,29 @@
 .rewiev {
   padding: 80px 20px 86px 20px;
 
+  &__wievport {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    user-select: none;
+    padding-bottom: 5px;
+  }
+
+  &__slidewrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    width: calc(100% * 3);
+    top: 0;
+    left: 0;
+    transition: 500ms;
+    transition-timing-function: ease-in-out;
+  }
+
+  &__slide {
+    width: calc(100% / 3);
+  }
+
   &__img {
     margin: 0 auto;
     margin-bottom: 30px;
@@ -28,9 +51,9 @@
     background-image: repeating-linear-gradient(
         to bottom,
         transparent,
-        transparent 30px,
-        #e1e1e1 30px,
-        #e1e1e1 31px
+        transparent 29px,
+        #e1e1e1 29px,
+        #e1e1e1 30px
       ),
       url(/images/Customers/breckets.png);
     background-repeat: no-repeat;
@@ -71,5 +94,45 @@
   &__location {
     text-align: center;
     margin-bottom: 30px;
+  }
+
+  &__prev-btn,
+  &__next-btn {
+    position: absolute;
+    border-radius: 50%;
+    bottom: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__prev-btn {
+    left: 40%;
+    transform: rotate(180deg);
+  }
+
+  &__next-btn {
+    right: 40%;
+  }
+
+  &__nav-btns {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__slide-nav-btn {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+
+    &:not(:last-child) {
+      margin-right: 18px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
