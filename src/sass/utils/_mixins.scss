@@ -1,15 +1,15 @@
-@mixin transition($one, $two, $three, $time, $function) {
-  transition-property: $one, $two, $three;
+@mixin transition($one: 'All', $time, $function) {
+  transition-property: $one;
   transition-duration: $time;
   transition-timing-function: $function;
 }
 
-@mixin font($ff, $fs, $fw, $lh, $ls, $fc) {
-  font-family: $ff;
-  font-size: $fs;
+@mixin font($fw, $fs, $lh, $ls, $tt: none, $fc) {
   font-weight: $fw;
-  line-height: $lh;
+  font-size: $fs;
+  line-height: $lh / $fw;
   letter-spacing: $ls;
+  text-transform: $tt;
   color: $fc;
 }
 
@@ -21,7 +21,7 @@
   flex-wrap: $wrap;
 }
 
-@mixin list($wrap, $ml, $mt) {
+@mixin list($wrap: wrap, $ml, $mt) {
   display: flex;
   flex-wrap: $wrap;
   margin-left: -1 * $ml;
