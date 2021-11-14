@@ -15,6 +15,8 @@
 <path d="M32.235 16c0 8.837-7.163 16-16 16s-16-7.163-16-16 7.163-16 16-16 16 7.163 16 16z" fill="var(--color3, #fea5bb)"/><path d="m13.102 18.375-.318 4.169c.454 0 .651-.182.887-.401l2.13-1.9 4.414 3.017c.81.421 1.38.199 1.598-.695l2.898-12.673c.257-1.117-.433-1.554-1.222-1.28L6.457 14.698c-1.162.421-1.145 1.026-.198 1.3l4.355 1.264 10.115-5.907c.476-.294.909-.131.553.163L13.1 18.375z" fill="var(--color4, #fff)"/></symbol>
 <symbol id="icon-vector-1" viewBox="0 0 26 32">
 <path fill="none" stroke="var(--color5, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-width="6.4" d="M3.542 3.2 20.367 16 3.542 28.8"/></symbol>
+<symbol id="icon-vector-2" viewBox="0 0 26 32">
+<path fill="none" stroke="var(--color5, #FFFFFF)" stroke-linejoin="round" stroke-linecap="round" stroke-width="6.4" d="M3.542 3.2 20.367 16 3.542 28.8"/></symbol>
 <symbol id="icon-close" viewBox="0 0 32 32">
 <path fill="none" stroke="var(--color4, #fff)" stroke-width="2" d="m2.519 2 26.963 28M2 29.481 30 2.518"/></symbol>
 <symbol id="icon-burger" viewBox="0 0 46 32">
@@ -33,6 +35,5 @@
 <symbol id="icon-Git-hub" viewBox="0 0 32 32">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M16 0.941c-8.271 0-15.059 6.788-15.059 15.059 0 7.058 4.953 13.47 11.529 15.059v-4.982c-0.652 0.143-1.251 0.147-1.915-0.049-0.89-0.263-1.613-0.856-2.15-1.76-0.342-0.577-0.949-1.203-1.581-1.157l-0.155-1.758c1.368-0.117 2.551 0.833 3.254 2.013 0.312 0.525 0.671 0.832 1.132 0.969 0.446 0.131 0.924 0.068 1.481-0.129 0.14-1.116 0.651-1.534 1.037-2.122v-0.001c-3.922-0.585-5.486-2.666-6.106-4.308-0.822-2.181-0.381-4.905 1.073-6.627 0.028-0.034 0.079-0.121 0.060-0.183-0.667-2.014 0.146-3.679 0.176-3.856 0.769 0.228 0.894-0.229 3.342 1.258l0.423 0.254c0.177 0.105 0.121 0.045 0.298 0.032 1.022-0.278 2.099-0.431 3.16-0.445 1.069 0.014 2.14 0.167 3.204 0.456l0.137 0.014c-0.012-0.002 0.037-0.009 0.12-0.058 3.057-1.852 2.947-1.247 3.767-1.513 0.030 0.177 0.831 1.87 0.172 3.858-0.089 0.274 2.65 2.782 1.132 6.809-0.62 1.643-2.184 3.724-6.106 4.309v0.001c0.503 0.766 1.107 1.174 1.104 2.755v6.219c6.577-1.589 11.529-8.001 11.529-15.059 0-8.271-6.787-15.059-15.059-15.059v0z"></path>
 </symbol>
-<symbol id="icon-icon-vector-red" viewBox="0 0 26 32"><path fill="none" stroke="#d41443" style="stroke:var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-width="6.4" d="M5.172 3.2 19.341 16 5.172 28.8"/></symbol><symbol id="icon-icon-vector-white" viewBox="0 0 26 32"><path fill="none" stroke="#fff" style="stroke:var(--color2, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-width="6.4" d="M5.172 3.2 19.341 16 5.172 28.8"/></symbol>
 </defs>
 </svg>
