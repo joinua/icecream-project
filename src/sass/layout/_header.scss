@@ -4,8 +4,9 @@
   position: absolute;
   z-index: 100;
   left: 20px;
+  width: 65%;
   @media screen and (min-width: 768px) {
-    width: 100%;
+    width: 95%;
   }
   @media screen and (min-width: 1280px) {
     justify-content: flex-start;
@@ -22,6 +23,9 @@
   position: absolute;
   top: 25px;
   padding-left: 61px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -51,7 +55,7 @@
   font-size: 16px;
   line-height: 21px;
   color: $primary-button;
-  padding-top: 50px;
+  margin-top: 50px;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -69,6 +73,7 @@
   border-radius: 22px;
   width: 159px;
   height: 44px;
+  cursor: pointer;
   &:hover,
   &:focus {
     background-color: $primary-button-hov;
@@ -86,6 +91,8 @@
   margin-bottom: 19px;
   margin-top: 60px;
   margin-left: 21px;
+  width: 90%;
+  cursor: pointer;
   &:hover,
   &:focus {
     background-color: $primary-button-hov;
@@ -98,16 +105,17 @@
   font-size: 16px;
   line-height: 21px;
   color: $crimson-text;
-  &::after {
-    content: '';
-    width: 4px;
-    height: 8px;
-    background-image: url(/images/svg/symbol-defs.svg#icon-vector-1);
-    margin-left: 12px;
-    color: $crimson-text;
-  }
 }
-
+.button__svg {
+  width: 6.03px;
+  height: 8px;
+  margin-left: 12.08px;
+}
+.menu {
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+}
 .menu-container.is-open {
   transform: translateX(0);
 }
@@ -123,9 +131,8 @@
   transition: transform 500ms ease-in-out;
 }
 .menu__close-icon {
-  position: absolute;
-  top: 23px;
-  right: 28px;
+  position: relative;
+  left: 208px;
 }
 .mobile-menu__link {
   font-family: DM Sans;
