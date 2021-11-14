@@ -31,6 +31,11 @@
 
   padding: 43px 20px;
 
+  @media screen and (min-width: 768px) {
+    margin: 0 20px 0 0;
+    padding: 50px 32px 50px 31px;
+  }
+
   &:not(:last-child) {
     margin: 0 0 20px 0;
 
@@ -52,17 +57,35 @@
   @include font(500, 12px, 22px, 0.04em, uppercase, $main-bcg);
 
   margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 25px;
+    width: 73px;
+    height: 28px;
+
+    font-size: 16px;
+  }
 }
 
 .shop__type--style {
   width: 130px;
   background: $milkshakes-bcg;
+
+  @media screen and (min-width: 768px) {
+    width: 138px;
+  }
 }
 
 .shop__place {
   margin-bottom: 10px;
 
   @include font(500, 12px, 22px, 0.04em, none, $black);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 14px;
+
+    @include font(500, 14px, 26px, 0.04em, none, $black);
+  }
 }
 
 .shop__description {
@@ -72,6 +95,13 @@
   @include font(500, 12px, 18px, normal, none, $coffee-text);
 
   border-bottom: 1px solid #e1e1e1;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+
+    @include font(500, 14px, 26px, normal, none, $black);
+  }
 }
 
 .shop__schedule {
@@ -79,23 +109,44 @@
   margin-bottom: 25px;
 
   border-bottom: 1px solid #e1e1e1;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .shop__thumb {
   margin-bottom: 11px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+  }
 }
 
 .shop__day {
   @include font(500, 12px, 22px, normal, none, $black);
+
+  @media screen and (min-width: 768px) {
+    @include font(500, 14px, 26px, normal, none, $black);
+  }
 }
 
 .shop__time {
   @include font(500, 12px, 22px, normal, none, $pink-text);
+
+  @media screen and (min-width: 768px) {
+    @include font(500, 14px, 26px, normal, none, $pink-text);
+  }
 }
 
 .contacts__link {
   @include font(500, 12px, 18px, normal, none, #907e82);
   font-style: normal;
+
+  @media screen and (min-width: 768px) {
+    @include font(500, 12px, 26px, normal, none, #907e82);
+  }
 }
 
 .button-thumb {
