@@ -10,8 +10,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 800ms cubic-bezier(0.4, 0, 0.2, 1);    
+    // &::placeholder {
+    //     visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    // }
     // transition: opacity 250ms var(--timing-function),
-    // visibility 250ms var(--timing-function);
+    // visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     // &.is-hidden {
     //   visibility: hidden;
     //   opacity: 0;

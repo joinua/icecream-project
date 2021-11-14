@@ -1,27 +1,14 @@
 .rewiev {
-  padding: 80px 20px 86px 20px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  padding-bottom: 86px;
 
-  &__wievport {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    user-select: none;
-    padding-bottom: 5px;
+  @media (min-width: 768px) {
+    padding-bottom: 119px;
   }
 
-  &__slidewrapper {
-    position: relative;
-    display: flex;
-    flex-wrap: nowrap;
-    width: calc(100% * 3);
-    top: 0;
-    left: 0;
-    transition: 500ms;
-    transition-timing-function: ease-in-out;
-  }
-
-  &__slide {
-    width: calc(100% / 3);
+  @media (min-width: 1280px) {
+    padding-bottom: 132px;
   }
 
   &__img {
@@ -30,34 +17,80 @@
   }
 
   &__comment {
-    padding: 0 50px 26px 50px;
+    position: relative;
+    margin: 0 auto;
+    padding: 43px 35px 20px 35px;
     background-color: #fafafa;
     margin-bottom: 30px;
+
+    @media (min-width: 768px) {
+      max-width: 620px;
+      padding: 47px 36px 28px 60px;
+      margin-bottom: 24px;
+    }
+
+    @media (min-width: 1280px) {
+      max-width: 926px;
+      padding: 47px 54px 32px 59px;
+      margin-bottom: 15px;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 28px;
+      left: 54px;
+      width: 54px;
+      height: 40px;
+      background-image: url(/images/Customers/breckets.png);
+      background-repeat: no-repeat;
+    }
   }
 
   &__text {
     display: block;
-    padding-top: 43px;
     padding-bottom: 10px;
     position: relative;
-    z-index: 3;
+    z-index: 10;
+    padding-left: 7px;
+    padding-right: 16px;
 
     font-weight: 500;
     font-size: 12px;
     line-height: 2.55;
     text-align: center;
     color: #000000;
+    letter-spacing: 0.01em;
+
+    @media (min-width: 768px) {
+      padding-left: 20px;
+      padding-right: 44px;
+      max-width: 524px;
+      font-size: 14px;
+      line-height: 2.16;
+      letter-spacing: 0.04em;
+    }
+
+    @media (min-width: 1280px) {
+      padding-left: 28px;
+      padding-right: 35px;
+      max-width: 750px;
+      font-size: 16px;
+      line-height: 1.86;
+      background-position-y: -1px;
+    }
 
     background-image: repeating-linear-gradient(
-        to bottom,
-        transparent,
-        transparent 29px,
-        #e1e1e1 29px,
-        #e1e1e1 30px
-      ),
-      url(/images/Customers/breckets.png);
+      to bottom,
+      transparent,
+      transparent 29px,
+      #e1e1e1 29px,
+      #e1e1e1 30px
+    );
     background-repeat: no-repeat;
-    background-position-y: 38px, 29px;
+    background-position-y: -2px;
   }
 
   &__poits {
@@ -94,45 +127,82 @@
   &__location {
     text-align: center;
     margin-bottom: 30px;
-  }
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
 
-  &__prev-btn,
-  &__next-btn {
-    position: absolute;
-    border-radius: 50%;
-    bottom: 0;
+    @media (min-width: 768px) {
+      font-size: 16px;
+    }
 
-    &:hover {
-      cursor: pointer;
+    @media (min-width: 1280px) {
+      font-size: 20px;
     }
   }
 
-  &__prev-btn {
-    left: 40%;
-    transform: rotate(180deg);
-  }
-
-  &__next-btn {
-    right: 40%;
-  }
-
-  &__nav-btns {
-    display: flex;
-    justify-content: center;
-  }
-
-  &__slide-nav-btn {
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    background-color: #d9d9d9;
-
-    &:not(:last-child) {
-      margin-right: 18px;
+  .slick {
+    &-slider {
+      position: relative;
     }
 
-    &:hover {
-      cursor: pointer;
+    &-list {
+      overflow: hidden;
+    }
+
+    &-track {
+      display: flex;
+    }
+
+    &-dots {
+      display: flex;
+      justify-content: center;
+
+      & li {
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        background-color: #d9d9d9;
+        font-size: 0;
+
+        &:not(:last-child) {
+          margin-right: 18px;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &.slick-active {
+          background-image: url(/images/Customers/vector.png);
+        }
+      }
+    }
+
+    &-arrow {
+      position: absolute;
+      border-radius: 50%;
+      bottom: -2px;
+      background-color: transparent;
+      outline: none;
+      background-image: url(/images/Customers/vector1.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      font-size: 0;
+      height: 15px;
+      width: 10px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &-prev {
+      left: calc((100% - 120px) / 2);
+      transform: rotate(180deg);
+    }
+
+    &-next {
+      right: calc((100% - 120px) / 2);
     }
   }
 }

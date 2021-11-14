@@ -3,9 +3,31 @@
         <h2 class="gallery__title is-hidden">
             Gallery
         </h2>
-        <img 
-        class="gallery__img"
-        src="" 
-        alt="the gallery with tasty ice creams' pictures">
+        <picture>
+            <source 
+                srcset="
+                    ./images/Gallery/gallery-desktop-1x-Recovered.png 1x,
+                    ./images/Gallery/gallery-desktop-2x-Recovered.png 2x"
+                media="(min-width:1280px)" 
+            >
+            <source 
+                srcset="
+                    ./images/Gallery/gallery-tab-1x-Recovered.png 1x,
+                    ./images/Gallery/gallery-tab-2x-Recovered.png 2x" 
+                media="(min-width:768px)" 
+            >
+            <source 
+                srcset="
+                    ./images/Gallery/gallery-mob-1x-Recovered.png 1x,
+                    ./images/Gallery/gallery-mob-2x-Recovered.png 2x" 
+                media="(max-width:767px)" 
+            >
+            <img 
+                class="gallery__img" 
+                src="images/Gallery/gallery-desktop-1x-Recovered.png"
+                alt="the gallery with tasty ice creams' pictures"
+                width="100%"
+            >
+        </picture>
     </div>
 </section>
