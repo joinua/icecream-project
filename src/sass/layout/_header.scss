@@ -84,6 +84,8 @@
   width: 209px;
   height: 44px;
   margin-bottom: 19px;
+  margin-top: 60px;
+  margin-left: 21px;
   &:hover,
   &:focus {
     background-color: $primary-button-hov;
@@ -113,7 +115,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  padding: 48px 83px 48px 21px;
   width: 100vw;
   height: 100vh;
   background: $mobile-menu-bcg;
@@ -133,7 +134,6 @@
   font-size: 14px;
   line-height: 18px;
   color: $primary-button;
-  padding-top: 50px;
   &:hover,
   &:focus {
     color: $crimson-text;
@@ -142,4 +142,8 @@
 .mobile-menu__item {
   border: 1px solid #e18298;
   padding: 12px 21px;
+}
+.mobile-menu {
+  width: 100vw;
+  height: 100vh;
 }
