@@ -243,6 +243,8 @@
   background: #d41342;
   border-radius: 22px;
 
+  cursor: pointer;
+
   @include font(700, 16px, 21px, normal, none, $main-bcg);
 
   &:not(:last-child) {
@@ -270,6 +272,11 @@
 
   @media screen and (min-width: 1280px) {
     width: 180px;
+
+    &:hover,
+    &:focus {
+      background: #ecebeb;
+    }
   }
 }
 
