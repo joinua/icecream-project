@@ -1,5 +1,15 @@
 .rewiev {
-  padding: 80px 20px 86px 20px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  padding-bottom: 86px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 119px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-bottom: 132px;
+  }
 
   &__img {
     margin: 0 auto;
@@ -8,9 +18,22 @@
 
   &__comment {
     position: relative;
-    padding: 43px 50px 26px 50px;
+    margin: 0 auto;
+    padding: 43px 35px 20px 35px;
     background-color: #fafafa;
     margin-bottom: 30px;
+
+    @media (min-width: 768px) {
+      max-width: 620px;
+      padding: 47px 36px 28px 60px;
+      margin-bottom: 24px;
+    }
+
+    @media (min-width: 1280px) {
+      max-width: 926px;
+      padding: 47px 54px 32px 59px;
+      margin-bottom: 15px;
+    }
 
     &::before {
       content: '';
@@ -31,12 +54,33 @@
     padding-bottom: 10px;
     position: relative;
     z-index: 10;
+    padding-left: 7px;
+    padding-right: 16px;
 
     font-weight: 500;
     font-size: 12px;
     line-height: 2.55;
     text-align: center;
     color: #000000;
+    letter-spacing: 0.01em;
+
+    @media (min-width: 768px) {
+      padding-left: 20px;
+      padding-right: 44px;
+      max-width: 524px;
+      font-size: 14px;
+      line-height: 2.16;
+      letter-spacing: 0.04em;
+    }
+
+    @media (min-width: 1280px) {
+      padding-left: 28px;
+      padding-right: 35px;
+      max-width: 750px;
+      font-size: 16px;
+      line-height: 1.86;
+      background-position-y: -1px;
+    }
 
     background-image: repeating-linear-gradient(
       to bottom,
