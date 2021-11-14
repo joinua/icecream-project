@@ -1,13 +1,19 @@
 .contacts {
   background: #fff5f6;
   position: relative;
-  margin-top: 86px;
+  margin-top: 84px;
   padding-bottom: 41px;
   height: 1430px;
 
   @media screen and (min-width: 768px) {
     height: 750px;
     padding-bottom: 0;
+    margin-top: 77px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 765px;
+    margin-top: 102px;
   }
 }
 
@@ -20,6 +26,10 @@
   @media screen and (min-width: 768px) {
     display: flex;
     top: -77px;
+  }
+
+  @media screen and (min-width: 768px) {
+    top: -102px;
   }
 }
 
@@ -42,6 +52,15 @@
     @media screen and (min-width: 768px) {
       margin: 0 20px 0 0;
     }
+
+    @media screen and (min-width: 1280px) {
+      margin: 0 31px 0 0;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 330px;
+    padding: 51px 44px 62px 43px;
   }
 }
 
@@ -63,7 +82,7 @@
     width: 73px;
     height: 28px;
 
-    font-size: 16px;
+    @include font(500, 16px, 30px, 0.04em, uppercase, $main-bcg);
   }
 }
 
@@ -81,10 +100,16 @@
 
   @include font(500, 12px, 22px, 0.04em, none, $black);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-bottom: 14px;
 
     @include font(500, 14px, 26px, 0.04em, none, $black);
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 14px;
+
+    @include font(500, 16px, 30px, 0.04em, none, $black);
   }
 }
 
@@ -100,7 +125,14 @@
     margin-bottom: 30px;
     padding-bottom: 30px;
 
-    @include font(500, 14px, 26px, normal, none, $black);
+    @include font(500, 14px, 26px, normal, none, $coffee-text);
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+
+    @include font(500, 16px, 29px, normal, none, $coffee-text);
   }
 }
 
@@ -114,6 +146,11 @@
     margin-bottom: 30px;
     padding-bottom: 30px;
   }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .shop__thumb {
@@ -121,6 +158,10 @@
 
   @media screen and (min-width: 768px) {
     margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
   }
 }
 
@@ -130,6 +171,10 @@
   @media screen and (min-width: 768px) {
     @include font(500, 14px, 26px, normal, none, $black);
   }
+
+  @media screen and (min-width: 1280px) {
+    @include font(500, 16px, 30px, normal, none, $black);
+  }
 }
 
 .shop__time {
@@ -137,6 +182,10 @@
 
   @media screen and (min-width: 768px) {
     @include font(500, 14px, 26px, normal, none, $pink-text);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(500, 16px, 30px, normal, none, $pink-text);
   }
 }
 
@@ -146,6 +195,10 @@
 
   @media screen and (min-width: 768px) {
     @include font(500, 12px, 26px, normal, none, #907e82);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(500, 16px, 29px, normal, none, #907e82);
   }
 }
 
