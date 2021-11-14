@@ -23,14 +23,46 @@
                 <a href="" class="header-nav__link">Contact</a>
             </li>
         </ul>
-      <div class="menu">
-        <button class="menu__toggle">
-          <svg width="20" height="12">
+    <div class="menu">
+        <button class="menu__toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+    <svg width="20" height="12">
             <use href="./images/svg/symbol-defs.svg#icon-burger"></use>
                 </svg>
             </button>
-        </div><button class="header-button" data-modal-open type="button">
+        </div>
+        <button class="header-button" data-modal-open type="button">
             <span class="button-text">Buy now</span>
         </button>
     </nav>
 </div>
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu__toggle js-close-menu">
+        <svg width="18" height="18" class="menu__close-icon">
+            <use href="images/svg/symbol-defs.svg#icon-close"></use>
+        </svg>
+    </button>
+    <button class="header-button2" data-modal-open type="button">
+        <span class="button-text">Buy now</span>
+    </button>
+    <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Home</a>
+        </li>
+        <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">About us</a>
+        </li>
+        <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">How it’s made?</a>
+        </li>
+        <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Our products</a>
+        </li>
+        <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Contact</a>
+        </li>
+    </ul>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+<script defer="" src="js/mobile-menu.js"></script>
