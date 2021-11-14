@@ -1,98 +1,4 @@
-.products {
-  padding-top: 121px;
-  padding-bottom: 98px;
-}
-
-.products__pretitle {
-  font-family: Titan One;
-  @include font(400, 18px, 21px, 0, uppercase, $pink-text);
-  text-align: center;
-
-  margin-bottom: 15px;
-}
-
-.products__title {
-  font-family: Titan One;
-  @include font(400, 34px, 39px, 0.04em, uppercase, $crimson-text);
-  text-align: center;
-
-  margin-bottom: 144px;
-}
-
 $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg);
-
-.products-cards__item {
-  min-width: 280px;
-  min-height: 485px;
-
-  padding: 161px 40px 41px 40px;
-
-  border-radius: 24px;
-
-  text-align: center;
-
-  position: relative;
-
-  background-color: rebeccapurple;
-
-  &:not(:last-child) {
-    margin-bottom: 130px;
-  }
-}
-
-.products-cards__item--cream {
-  &::before {
-    content: ' ';
-    display: block;
-    position: absolute;
-
-    left: 0px;
-    top: -113px;
-
-    width: 100%;
-    height: 252px;
-
-    background-image: url('/images/Products/products-icecream-mob-1x.png');
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-
-.products-cards__item--coffee {
-  &::before {
-    content: ' ';
-    display: block;
-    position: absolute;
-
-    left: 0px;
-    top: -113px;
-
-    width: 100%;
-    height: 252px;
-
-    background-image: url('/images/Products/products-icecoffee-mob-1x.png');
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-
-.products-cards__item--milkshakes {
-  &::before {
-    content: ' ';
-    display: block;
-    position: absolute;
-
-    left: 0px;
-    top: -113px;
-
-    width: 100%;
-    height: 252px;
-
-    background-image: url('/images/Products/products-milkshakes-mob-1x.png');
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
 
 @each $id, $colorList in $colors {
   .products-cards__item--#{$id} {
@@ -100,12 +6,378 @@ $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg
   }
 }
 
+@media (max-width: 767px) {
+  .products {
+    padding-top: 121px;
+    padding-bottom: 98px;
+  }
+
+  .products__pretitle {
+    font-family: Titan One;
+    @include font(400, 18px, 21px, 0, uppercase, $pink-text);
+    text-align: center;
+
+    margin-bottom: 15px;
+  }
+
+  .products__title {
+    font-family: Titan One;
+    @include font(400, 34px, 39px, 0.04em, uppercase, $crimson-text);
+    text-align: center;
+
+    margin-bottom: 144px;
+  }
+
+  .products-cards__item {
+    min-width: 220px;
+    min-height: 485px;
+
+    padding: 161px 40px 41px 40px;
+
+    border-radius: 24px;
+
+    text-align: center;
+
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 130px;
+    }
+  }
+
+  .products-cards__item--cream {
+    &::before {
+      content: ' ';
+      display: block;
+      position: absolute;
+
+      left: 0px;
+      top: -113px;
+
+      width: 100%;
+      height: 252px;
+
+      background-image: url('/images/Products/products-icecream-mob-1x.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .products-cards__item--coffee {
+    &::before {
+      content: ' ';
+      display: block;
+      position: absolute;
+
+      left: 0px;
+      top: -113px;
+
+      width: 100%;
+      height: 252px;
+
+      background-image: url('/images/Products/products-icecoffee-mob-1x.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .products-cards__item--milkshakes {
+    &::before {
+      content: ' ';
+      display: block;
+      position: absolute;
+
+      left: 0px;
+      top: -113px;
+
+      width: 100%;
+      height: 252px;
+
+      background-image: url('/images/Products/products-milkshakes-mob-1x.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .products-cards__title {
+    font-family: Titan One;
+    @include font(400, 20px, 23px, 0.04em, uppercase, $white-text);
+
+    margin-bottom: 68px;
+
+    position: relative;
+
+    &::before {
+      content: ' ';
+      display: block;
+      position: absolute;
+
+      left: 0px;
+      top: 53px;
+
+      width: 100%;
+      height: 6px;
+
+      background-image: url('/images/Products/ellipsis.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .product-cards__content {
+    width: 200px;
+    height: 124px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    margin-bottom: 30px;
+  }
+
+  .products-cards__text {
+    @include font(700, 14px, 21px, 0.04em, none, $white-text);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .products {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
+
+  .products__pretitle {
+    font-family: Titan One;
+    @include font(400, 26px, 30px, 0, uppercase, $pink-text);
+    text-align: center;
+
+    margin-bottom: 15px;
+  }
+
+  .products__title {
+    font-family: Titan One;
+    @include font(400, 48px, 55px, 0.04em, uppercase, $crimson-text);
+    text-align: center;
+
+    margin-bottom: 150px;
+  }
+
+  .products-cards {
+    display: flex;
+    flex-wrap: no-wrap;
+    margin: -10px;
+  }
+
+  .products-cards__item {
+    flex-basis: calc((100% - 3 * 20px) / 3);
+    margin: 10px;
+
+    min-width: 220px;
+    height: 485px;
+
+    padding: 152px 11px 40px 11px;
+
+    border-radius: 24px;
+
+    text-align: center;
+
+    position: relative;
+  }
+
+  .products-cards__item--cream {
+    &::before {
+      content: ' ';
+      display: block;
+      position: absolute;
+
+      left: 0px;
+      top: -113px;
+
+      width: 100%;
+      height: 226px;
+
+      background-image: url('/images/Products/products-icecream-tab-1x.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .products-cards__item--coffee {
+    &::before {
+      content: ' ';
+      display: block;
+      position: absolute;
+
+      left: 0px;
+      top: -113px;
+
+      width: 100%;
+      height: 226px;
+
+      background-image: url('/images/Products/products-icecoffee-tab-1x.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .products-cards__item--milkshakes {
+    &::before {
+      content: ' ';
+      display: block;
+      position: absolute;
+
+      left: 0px;
+      top: -113px;
+
+      width: 100%;
+      height: 226px;
+
+      background-image: url('/images/Products/products-milkshakes-tab-1x.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .products-cards__title {
+    font-family: Titan One;
+    @include font(400, 20px, 23px, 0.04em, uppercase, $white-text);
+
+    margin-bottom: 66px;
+  }
+
+  .product-cards__content {
+    width: 198px;
+    height: 124px;
+
+    overflow: hidden;
+
+    margin-bottom: 40px;
+  }
+
+  .products-cards__text {
+    @include font(700, 14px, 25px, 0.04em, none, $white-text);
+  }
+}
+
+@media (min-width: 1280px) {
+  .products {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
+
+  .products__pretitle {
+    font-family: Titan One;
+    @include font(400, 30px, 34px, 0, uppercase, $pink-text);
+    text-align: center;
+
+    margin-bottom: 15px;
+  }
+
+  .products__title {
+    font-family: Titan One;
+    @include font(400, 58px, 66px, 0.04em, uppercase, $crimson-text);
+    text-align: center;
+
+    margin-bottom: 259px;
+  }
+
+  .products-cards {
+    @include list(wrap, 30px, 30px);
+  }
+
+  .products-cards__item {
+    @include item(30px, 30px, 3, 30px);
+
+    min-width: 329px;
+    height: 525px;
+
+    padding: 163px 44px 50px 44px;
+
+    border-radius: 24px;
+
+    text-align: center;
+
+    position: relative;
+  }
+
+  .products-cards__item--cream {
+    &::before {
+      content: ' ';
+      display: block;
+      position: absolute;
+
+      left: 0px;
+      top: -210px;
+
+      width: 335px;
+      height: 335px;
+
+      background-image: url('/images/Products/products-icecream-desktop-1x.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .products-cards__item--coffee {
+    &::before {
+      content: ' ';
+      display: block;
+      position: absolute;
+
+      left: 0px;
+      top: -210px;
+
+      width: 335px;
+      height: 335px;
+
+      background-image: url('/images/Products/products-icecoffee-desktop-1x.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .products-cards__item--milkshakes {
+    &::before {
+      content: ' ';
+      display: block;
+      position: absolute;
+
+      left: 0px;
+      top: -210px;
+
+      width: 335px;
+      height: 335px;
+
+      background-image: url('/images/Products/products-milkshakes-desktop-1x.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .products-cards__title {
+    font-family: Titan One;
+    @include font(400, 20px, 23px, 0.04em, uppercase, $white-text);
+
+    margin-bottom: 66px;
+  }
+
+  .product-cards__content {
+    width: 241px;
+    height: 106px;
+
+    overflow: hidden;
+
+    margin-bottom: 62px;
+  }
+
+  .products-cards__text {
+    @include font(700, 16px, 28px, 0.04em, none, $white-text);
+
+    text-align: center;
+  }
+}
+
 .products-cards__title {
-  font-family: Titan One;
-  @include font(400, 20px, 23px, 0.04em, uppercase, $white-text);
-
-  margin-bottom: 68px;
-
   position: relative;
 
   &::before {
@@ -125,21 +397,23 @@ $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg
   }
 }
 
-.products-cards__text {
-  @include font(700, 14px, 21px, 0.04em, uppercase, $white-text);
-
-  margin-bottom: 30px;
-}
-
 .products-cards__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 40px;
   height: 40px;
   border-radius: 50%;
 
+  margin: 0 auto;
+
+  fill: $products-button;
   background-color: $white-text;
 
   &:hover,
   &:focus {
-    background-color: $products-button;
+    // fill: $white-text;
+    background-color: $primary-button-hov;
   }
 }
