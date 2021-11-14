@@ -1,20 +1,16 @@
 .contacts {
   background: #fff5f6;
   position: relative;
-  // padding-top: 715px;
-  // padding-bottom: 715px;
+  margin-top: 86px;
+  padding-bottom: 41px;
+  height: 1430px;
 }
 
 .contacts__list {
-  margin-left: auto;
-  margin-right: auto;
-  // position: absolute;
-  // top: center;
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
-  // margin-right: -50%;
-  // transform: translate(-50%, -50%);
+  position: absolute;
+  top: -84px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .contacts__item {
@@ -31,9 +27,7 @@
 }
 
 .shop__type {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(flex, center, center, row, nowrap);
 
   width: 80px;
   height: 16px;
@@ -89,3 +83,40 @@
   @include font(500, 12px, 18px, normal, none, #907e82);
   font-style: normal;
 }
+
+.button-thumb {
+  position: absolute;
+  @include flex(flex, center, center, column, nowrap);
+
+  left: 50%;
+  bottom: 41px;
+  transform: translate(-50%);
+}
+
+.contacts-button {
+  width: 161px;
+  height: 44px;
+
+  background: #d41342;
+  border-radius: 22px;
+
+  @include font(700, 16px, 21px, normal, none, $main-bcg);
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.contacts-button--button-color {
+  background:$main-bcg;
+  color: #d41342;
+}
+
+.contacts-button__icon {
+  margin-left: 8px;
+}
+
+.contacts-button__icon--gap {
+  margin-left: 13.17px;
+}
+
