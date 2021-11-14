@@ -5,26 +5,37 @@
       <h2 class="caption-block__heading">how it’s made?</h2>
     </div>
     <div class="description">
-      <img
-        class="description__img"
-        srcset="/images/Cow/cow-mob-1x.png 1x, /images/Cow/cow-mob-2x.png 2x"
-        src="/images/Cow/cow-mob-1x.png"
-        alt="cow_and_milk"
-      />
-      <p class="description__text">
-        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
-        lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-      </p>
-      <span class="description__span"
-        >Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
-        in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
-        maximus. Cras massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.</span
-      >
-      <button type="button" class="description__button">
-        Read more<svg class="description__svg">
-          <use href="/images/svg/symbol-defs.svg#icon-vector-1"></use>
-        </svg>
-      </button>
+      <picture class="description__picture">
+        <source
+          srcset="images/Cow/cow-tab-1x.png 1x, images/Cow/cow-tab-2x.png 2x"
+          media="(min-width:768px)" />
+
+        <source
+          srcset="images/Cow/cow-desktop-1x.png 1x, images/Cow/cow-desktop-2x.png 2x"
+          media="(min-width:1280px)" />
+        <source
+          srcset="images/Cow/cow-mob-1x.png 1x, images/Cow/cow-mob-2x.png 2x"
+          media="(max-width:767px)" />
+        <img class="description__img" src="images/Cow/cow-mob-1x.png" alt="cow_and_milk"
+      /></picture>
+      <div class="description__text-wrapper">
+        <p class="description__text">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+        </p>
+        <span class="description__span"
+          >Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus
+          orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat
+          urna maximus. Cras massa nibh, tincidunt. <br />
+          <br />
+          Aliquam erat volutpat. Aenean accumsan.</span
+        >
+        <button type="button" class="description__button">
+          Read more<svg class="description__svg">
+            <use href="/images/svg/symbol-defs.svg#icon-vector-1"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </section>
