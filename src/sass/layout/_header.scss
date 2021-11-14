@@ -1,9 +1,12 @@
 .nav {
   display: flex;
-  width: 100%;
   justify-content: space-between;
   position: absolute;
   z-index: 100;
+  left: 20px;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
   @media screen and (min-width: 1280px) {
     justify-content: flex-start;
   }
@@ -18,7 +21,7 @@
 .menu__toggle {
   position: absolute;
   top: 25px;
-  right: 20px;
+  padding-left: 61px;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -49,6 +52,9 @@
   line-height: 21px;
   color: $primary-button;
   padding-top: 50px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: $crimson-text;
@@ -63,8 +69,15 @@
   border-radius: 22px;
   width: 159px;
   height: 44px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (max-width: 768px) {
     display: none;
+  }
+  &:hover,
+  &:focus {
+    background-color: $primary-button-hov;
   }
 }
 .button-text {
