@@ -7,6 +7,7 @@
 
   @media screen and (min-width: 768px) {
     height: 750px;
+    padding-bottom: 0;
   }
 }
 
@@ -99,11 +100,18 @@
 
 .button-thumb {
   position: absolute;
-  @include flex(flex, center, center, column, nowrap);
 
   left: 50%;
   bottom: 41px;
   transform: translate(-50%);
+
+  @media screen and (max-width: 767px) {
+    @include flex(flex, center, center, column, nowrap);
+  }
+
+  @media screen and (min-width: 768px) {
+    bottom: 158px;
+  }
 }
 
 .contacts-button {
@@ -116,17 +124,43 @@
   @include font(700, 16px, 21px, normal, none, $main-bcg);
 
   &:not(:last-child) {
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
+
+    @media screen and (min-width: 768px) {
+      margin: 0 14.5px 0 0;
+      width: 191.45px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin: 0 15px 0 0;
+      width: 198px;
+    }
   }
 }
 
-.contacts-button--button-color {
+.contacts-button--button-style {
   background: $main-bcg;
   color: #d41342;
+
+  @media screen and (min-width: 768px) {
+    width: 174.05px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 180px;
+  }
 }
 
 .contacts-button__icon {
   margin-left: 8px;
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 13.4px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 13.62px;
+  }
 }
 
 .contacts-button__icon--gap {
