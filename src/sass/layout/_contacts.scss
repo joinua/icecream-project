@@ -34,21 +34,29 @@
 .contacts__list {
   position: absolute;
   top: -84px;
-  left: 50%;
-  transform: translate(-50%);
+  
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    top: -77px;
+  @media screen and (max-width: 767px) {
+    left: 50%;
+    transform: translate(-50%);
   }
 
   @media screen and (min-width: 768px) {
+    @include list(wrap, 20px, 20px);
+    max-width: 768px;
+    top: -77px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include list(wrap, 31px, 31px);
+    max-width: 1280px;
     top: -102px;
+    justify-content: center;
   }
 }
 
 .contacts__item {
-  width: 220px;
+  max-width: 220px;
   background: $white-text;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
@@ -56,25 +64,22 @@
   padding: 43px 20px;
 
   @media screen and (min-width: 768px) {
-    margin: 0 20px 0 0;
     padding: 50px 32px 50px 31px;
-  }
 
-  &:not(:last-child) {
-    margin: 0 0 20px 0;
-
-    @media screen and (min-width: 768px) {
-      margin: 0 20px 0 0;
-    }
-
-    @media screen and (min-width: 1280px) {
-      margin: 0 31px 0 0;
-    }
+    @include item(20px, 20px, 3, 20px);
   }
 
   @media screen and (min-width: 1280px) {
-    width: 330px;
+    max-width: 330px;
     padding: 51px 44px 62px 43px;
+
+    @include item(20px, 31px, 3, 31px);
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin: 0 0 20px 0;
+    }
   }
 }
 
