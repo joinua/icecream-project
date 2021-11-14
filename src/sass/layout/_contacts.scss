@@ -14,6 +14,20 @@
   @media screen and (min-width: 1280px) {
     height: 765px;
     margin-top: 102px;
+
+    background-image: url('/images/contacts/contacts-1x.png');
+    background-size: 1280px 382px;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .contacts {
+    background-image: url('/images/contacts/contacts-2x.png');
   }
 }
 
@@ -215,6 +229,10 @@
 
   @media screen and (min-width: 768px) {
     bottom: 158px;
+  }
+
+  @media screen and (min-width: 768px) {
+    bottom: 165px;
   }
 }
 
