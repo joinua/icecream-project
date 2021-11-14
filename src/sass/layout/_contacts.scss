@@ -4,6 +4,10 @@
   margin-top: 86px;
   padding-bottom: 41px;
   height: 1430px;
+
+  @media screen and (min-width: 768px) {
+    height: 750px;
+  }
 }
 
 .contacts__list {
@@ -11,6 +15,11 @@
   top: -84px;
   left: 50%;
   transform: translate(-50%);
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    top: -77px;
+  }
 }
 
 .contacts__item {
@@ -22,7 +31,11 @@
   padding: 43px 20px;
 
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
+
+    @media screen and (min-width: 768px) {
+      margin: 0 20px 0 0;
+    }
   }
 }
 
@@ -108,7 +121,7 @@
 }
 
 .contacts-button--button-color {
-  background:$main-bcg;
+  background: $main-bcg;
   color: #d41342;
 }
 
@@ -119,4 +132,3 @@
 .contacts-button__icon--gap {
   margin-left: 13.17px;
 }
-
