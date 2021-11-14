@@ -1,7 +1,7 @@
 .backdrop {
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 101;
     // left: 0;
     width: 100vw;
     height: 100vh;
@@ -35,20 +35,21 @@
 
 .modal {
     position: relative;
-    max-width: 320px;
+    min-width: 320px;
+    max-width: 480px;
     width: 100%;
     min-height: 502px;
     background-color: #E17992;
     // background-color: #e06f8a;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
 }
 
 .modal__close-btn {
     width: 35px;
     height: 35px;
-    top: 23px;
-    right: 28px;
+    top: 10px;
+    right: 13px;
     background-color: inherit;
     // border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
@@ -76,11 +77,11 @@
 
 .modal__title {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     line-height: calc(23 / 20);
     text-align: center;
     color: $white-text;
-    padding-top: 45px;
+    padding-top: 35px;
     margin-bottom: 12px;
 }
 
@@ -110,7 +111,7 @@
     padding-left: 42px;
     padding-right: 15px;
     outline: none;
-    transition: border-color 250ms var(--timing-function);
+    // transition: border-color 250ms var(--timing-function);
     &:focus {
       border-color: $white-text;
       cursor: pointer;
@@ -118,6 +119,16 @@
     //       fill: var(--accent-color);
     //   }
     }
+  }
+
+  .modal-form__icon {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    fill: $white-text;
+    // transition: fill 250ms var(--timing-function);
   }
 
   .form-label__comments {
@@ -147,20 +158,65 @@
     color: $white-text;
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     
     .check-text__conditions {
       color: #c2e297;
     }
     span {
-      width: 16px;
-      height: 15px;
-      border: 2px solid #212121;
+      width: 13px;
+      height: 13px;
+      border: 2px solid $white-text;
       border-radius: 3px;
       margin-right: 8px;
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: background-color 250ms var(--timing-function); 
+      // transition: background-color 250ms var(--timing-function); 
     }
+  }
+
+  .check-text__icon {
+    fill: #E17992;
+  }
+  
+  .modal-checkbox {
+    &:checked + .check-text span {
+      background-color: $white-text;
+      border: none;
+    }
+    &.visually-hidden {
+      position: absolute;
+      overflow: hidden;
+      opacity: 0;
+    }
+  }
+
+  .modal-btn {
+    width: 80px;
+    height: 40px;
+    color: $white-text;
+    background: #ffa5ba;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    // transition: background-color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+     background-color: #ec5f7d;
+     cursor: pointer; 
+    }
+  }
+  
+  .modal-btn__title {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: calc(30 / 16);
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $white-text;
   }
