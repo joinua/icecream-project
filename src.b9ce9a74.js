@@ -20,4 +20,4 @@ var e;function t(){e=document.querySelectorAll(".spoiler"),r(),i(),window.addEve
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/slick.min.js"),require("./js/slider.js"),require("./js/modal.js"),require("./js/accordion.js");
 },{"./sass/main.scss":"clu1","./js/slick.min.js":"SeYZ","./js/slider.js":"wzuc","./js/modal.js":"RSqK","./js/accordion.js":"E8nk"}]},{},["Focm"], null)
-//# sourceMappingURL=/icecream-project/src.ce29dd66.js.map
+//# sourceMappingURL=/icecream-project/src.b9ce9a74.js.map
