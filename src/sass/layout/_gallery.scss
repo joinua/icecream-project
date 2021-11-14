@@ -1,19 +1,21 @@
 .gallery {
-  height: 219px;
-  @include section(97px, 0);
-  background-image: linear-gradient(to bottom, $secondary-bcg 66.2%, $main-bcg 66.2%);
+  @include section(0, 80px);
+  background-image: linear-gradient(to bottom, $secondary-bcg 23.8%, $main-bcg 23.8%);
 
   @media screen and(min-width:768px) {
-    height: 404px;
-    @include section(140px, 0);
-    background-image: linear-gradient(to bottom, $secondary-bcg 60.9%, $main-bcg 60.9%);
+    @include section(0, 121px);
+    background-image: linear-gradient(to bottom, $secondary-bcg 27.5%, $main-bcg 27.5%);
   }
 
   @media screen and(min-width:1280px) {
-    height: 569px;
-    @include section(139px, 0);
-    background-image: linear-gradient(to bottom, $secondary-bcg 54.5%, $main-bcg 54.5%);
+    @include section(0, 123px);
+    background-image: linear-gradient(to bottom, $secondary-bcg 30.9%, $main-bcg 30.9%);
   }
+}
+
+.gallery__container {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .is-hidden {
