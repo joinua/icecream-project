@@ -24,4 +24,4 @@ $(window).scroll(function(){$(this).scrollTop()>=100?$("#top").fadeIn("fast"):$(
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/slick.min.js"),require("./js/slider.js"),require("./js/modal.js"),require("./js/jqwery-scroll.js"),require("./js/accordion.js"),require("./js/scroll-to-top.js");
 },{"./sass/main.scss":"clu1","./js/slick.min.js":"SeYZ","./js/slider.js":"wzuc","./js/modal.js":"RSqK","./js/jqwery-scroll.js":"uBnJ","./js/accordion.js":"E8nk","./js/scroll-to-top.js":"mh2G"}]},{},["Focm"], null)
-//# sourceMappingURL=/icecream-project/src.b03de3a4.js.map
+//# sourceMappingURL=/icecream-project/src.8438fda2.js.map
