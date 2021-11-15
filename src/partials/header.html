@@ -11,16 +11,16 @@
                 <a href="#" class="header-nav__link">Home</a>
             </li>
             <li class="header-nav__item">
-                <a href="#" class="header-nav__link">About us</a>
+                <a href="#about" onclick="slowScroll('#about')" class="header-nav__link">About us</a>
             </li>
             <li class="header-nav__item">
-                <a href="#" class="header-nav__link">How it’s made?</a>
+                <a href="#about" onclick="slowScroll('#about')" class="header-nav__link">How it’s made?</a>
             </li>
             <li class="header-nav__item">
-                <a href="#" class="header-nav__link">Our products</a>
+                <a href="#products" onclick="slowScroll('#products')" class="header-nav__link">Our products</a>
             </li>
             <li class="header-nav__item">
-                <a href="#" class="header-nav__link">Contact</a>
+                <a href="#contacts" onclick="slowScroll('#contacts')" class="header-nav__link">Contact</a>
             </li>
         </ul>
     <div class="menu">
@@ -72,3 +72,12 @@
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
 <script defer="" src="js/mobile-menu.js"></script>
+<script type="text/javascript">
+    function slowScroll(id) {
+            var offset = 0;
+            $('html, body').animate({
+                scrollTop: $(id).offset().top - offset
+            }, 1000);
+            return false;
+        }
+</script>
