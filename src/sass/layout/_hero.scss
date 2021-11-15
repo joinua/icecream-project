@@ -1,11 +1,9 @@
 .hero {
   position: relative;
 
-  max-width: 1280px;
   height: 502px;
   margin: 0 auto;
   padding-top: 193px;
-  padding-right: 32px;
   padding-bottom: 160px;
   padding-left: 20px;
   background-color: #ffb8ca;
@@ -104,11 +102,21 @@
   text-align: center;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    background-color: #e5e5e5;
+  }
+
   &--products {
     margin-right: 8px;
 
     background-color: #d41443;
     color: #ffffff;
+
+    &:hover,
+    &:focus {
+      background-color: #c7133e;
+    }
   }
 
   @media screen and (min-width: 1200px) {
@@ -121,6 +129,7 @@
     margin-right: 17px;
   }
 }
+
 .hero__text {
   @media screen and (max-width: 767px) {
     display: none;
@@ -152,7 +161,7 @@
   }
 }
 
-.btn-circle {
+.products-cards__btn.btn-circle {
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -164,9 +173,6 @@
 
     width: 18px;
     height: 18px;
-    padding: 6px 5px;
-    border-radius: 50%;
-    background-color: #ffffff;
   }
 
   @media screen and (min-width: 1200px) {
@@ -175,7 +181,6 @@
 
     width: 26px;
     height: 26px;
-    padding: 9px 8px;
   }
 }
 
@@ -185,10 +190,8 @@
   }
 
   @media screen and (min-width: 768px) {
-    display: block;
     width: 8px;
     height: 6px;
-    fill: #d41443;
   }
 
   @media screen and (min-width: 1200px) {
