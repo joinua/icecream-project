@@ -1,27 +1,23 @@
 .hero {
+  background-color: $bcg-hero;
+}
+
+.container.hero__container {
   position: relative;
 
   height: 502px;
-  margin: 0 auto;
   padding-top: 193px;
-  padding-bottom: 160px;
-  padding-left: 20px;
-  background-color: #ffb8ca;
+  background-color: $bcg-hero;
   text-align: left;
 
   @media screen and (min-width: 768px) {
     height: 399px;
     padding-top: 102px;
-    padding-bottom: 28px;
-    padding-left: 34px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     height: 665px;
     padding-top: 171px;
-    padding-right: 97px;
-    padding-bottom: 45px;
-    padding-left: 77px;
   }
 }
 
@@ -32,16 +28,12 @@
   max-width: 218px;
 
   font-family: Titan One;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 1.15;
-  text-transform: uppercase;
-  color: #ffffff;
+  @include font(400, 26px, 30px, 0.04em, uppercase, $white-text);
 
   &--color-pink {
     font-size: 48px;
     line-height: 0.958;
-    color: #d41443;
+    color: $crimson-text;
   }
 
   @media screen and (min-width: 768px) {
@@ -57,14 +49,14 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     max-width: 277px;
     font-size: 38px;
     line-height: 1.158;
   }
 
   &--color-pink {
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 58px;
       line-height: 0.897;
     }
@@ -82,7 +74,7 @@
     margin-top: 20px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-top: 25px;
   }
 }
@@ -93,33 +85,32 @@
   padding: 9px 15px;
   min-width: 62px;
 
-  background-color: #ffffff;
-  color: #d41443;
   font-family: inherit;
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 1.25;
+  @include font(400, 8px, 10px, 0.04em, none, $crimson-text);
+  background-color: $white-text;
   text-align: center;
   cursor: pointer;
 
+  @include transition('background-color', 350ms, cubic-bezier(0.4, 0, 0.2, 1));
+
   &:hover,
   &:focus {
-    background-color: #e5e5e5;
+    background-color: $primary-button-hov;
   }
 
   &--products {
     margin-right: 8px;
 
-    background-color: #d41443;
-    color: #ffffff;
+    background-color: $products-button;
+    color: $white-text;
 
     &:hover,
     &:focus {
-      background-color: #c7133e;
+      background-color: $products-button-hov;
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     min-width: 104px;
     font-size: 14px;
     line-height: 1.286;
@@ -144,13 +135,10 @@
     display: block;
     max-width: 114px;
 
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 1.5;
-    color: #ffffff;
+    @include font(400, 8px, 12px, 0.04em, none, $white-text);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     bottom: 102px;
     left: 295px;
 
@@ -175,7 +163,7 @@
     height: 18px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     bottom: 56px;
     left: 295px;
 
@@ -194,7 +182,7 @@
     height: 6px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 10px;
     height: 8px;
   }
@@ -210,7 +198,7 @@
     right: 247px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     right: 450px;
   }
 }
@@ -227,7 +215,7 @@
     right: 137px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     right: 267px;
   }
 }
@@ -244,7 +232,7 @@
     z-index: 2;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     left: 77px;
   }
 }
@@ -261,7 +249,7 @@
     z-index: 2;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     right: 109px;
   }
 }
@@ -275,7 +263,7 @@
   top: 96px;
   right: 44px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     top: 160px;
     right: 115px;
   }
@@ -293,11 +281,8 @@
   height: 44px;
   margin-bottom: 14px;
 
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 1.25;
+  @include font(400, 8px, 10px, 0.04em, none, $white-text);
   text-align: right;
-  color: #ffffff;
 
   &::after {
     content: ' ';
@@ -308,11 +293,11 @@
     display: block;
     width: 16px;
     height: 16px;
-    background-color: #ffffff;
     border-radius: 50%;
+    background-color: $white-text;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 92px;
     height: 77px;
     margin-bottom: 18px;
@@ -335,9 +320,10 @@
     }
 
     position: absolute;
-    z-index: 2;
     top: 0;
     right: 0;
+    z-index: 2;
+
     width: 100%;
     height: 100%;
   }
@@ -349,15 +335,10 @@
 
     display: block;
 
-    font-family: 'Titan One';
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 1.14;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #d41443;
+    font-family: Titan One;
+    @include font(400, 28px, 32px, 0.04em, uppercase, $crimson-text);
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 46px;
       line-height: 1.15;
       margin-bottom: 2px;
