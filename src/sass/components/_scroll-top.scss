@@ -18,24 +18,30 @@
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-#top i {
-  color: $white-text;
-  margin: 0;
-  position: relative;
-  left: 16px;
-  top: 13px;
-  font-size: 19px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+#top {
+  i {
+    color: $white-text;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
 }
+
 #top:hover {
   background: $crimson-text;
   opacity: 90%;
 }
-#top:hover i {
-  color: #fff;
-  top: 5px;
+
+#top:hover {
+  i {
+    color: #fff;
+    top: 5px;
+  }
 }
