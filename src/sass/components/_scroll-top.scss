@@ -35,13 +35,12 @@
 }
 
 #top:hover {
-  background: $crimson-text;
-  opacity: 90%;
+  background: rgba(139, 1, 19, 0.884);
 }
 
 #top:hover {
   i {
-    color: #fff;
+    color: $white-text;
     top: 5px;
   }
 }
