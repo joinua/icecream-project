@@ -37,6 +37,17 @@
     display: none;
   }
 }
+.menu__toggle2 {
+  position: absolute;
+  top: 25px;
+  right: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
 .header-nav {
   display: flex;
   margin: 0 110px;
