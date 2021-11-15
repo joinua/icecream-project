@@ -1,7 +1,7 @@
 .backdrop {
     position: fixed;
     top: 0;
-    z-index: 101;
+    z-index: 1001;
     // left: 0;
     width: 100vw;
     height: 100vh;
@@ -83,6 +83,10 @@
     color: $white-text;
     padding-top: 35px;
     margin-bottom: 12px;
+
+    @media screen and (min-width: 480px) {
+      font-size: 17px;
+    }
 }
 
 .form-label {
@@ -99,6 +103,9 @@
     color: $white-text;
     display: block;
     margin-bottom: 4px;
+    @media screen and (min-width: 480px) {
+      font-size: 15px;
+    }
   }
   
 
@@ -149,6 +156,9 @@
       line-height: calc(14 / 12);
       letter-spacing: 0.01em;
       color: rgba(117, 117, 117, 0.5);
+      @media screen and (min-width: 480px) {
+        font-size: 14px;
+      }
     }
   }
 
@@ -173,6 +183,13 @@
       align-items: center;
       justify-content: center;
       // transition: background-color 250ms var(--timing-function); 
+      @media screen and (min-width: 480px) {
+        width: 15px;
+        height: 15px;
+      }
+    }
+    @media screen and (min-width: 480px) {
+      font-size: 15px;
     }
   }
 
@@ -219,4 +236,7 @@
     text-align: center;
     letter-spacing: 0.06em;
     color: $white-text;
+    @media screen and (min-width: 480px) {
+      font-size: 15px;
+    }
   }
