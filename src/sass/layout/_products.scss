@@ -313,6 +313,8 @@ $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg
   }
 
   .products-cards__item {
+    @include transition(transform, 500ms);
+
     @include item(30px, 30px, 3, 30px);
 
     min-width: 329px;
@@ -423,7 +425,7 @@ $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg
 .products-cards__item.more-open {
   height: auto;
   transform: scale(1.05, 1.05);
-  @include transition('transform', 500ms, cubic-bezier(0.4, 0, 0.2, 1));
+  @include transition(transform, 500ms);
 }
 
 .products-cards__title {
@@ -460,7 +462,7 @@ $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg
   fill: $products-button;
   background-color: $white-text;
 
-  @include transition('background-color', 350ms, cubic-bezier(0.4, 0, 0.2, 1));
+  @include transition(background-color);
 
   &:hover,
   &:focus {
