@@ -9,7 +9,6 @@
   padding-top: 193px;
   background-color: $bcg-hero;
   text-align: left;
-  overflow: hidden;
 
   // animation: show 1500ms;
 
@@ -35,7 +34,7 @@
 
 .hero__title {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 
   max-width: 218px;
 
@@ -77,7 +76,7 @@
 
 .hero__list {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 
   display: flex;
 }
