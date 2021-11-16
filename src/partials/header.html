@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container header-container">
     <nav class="nav">
         <a href="#" class="logo-nav">
             <img srcset="./images/Hero/logo-mob-1x.png 1x,
@@ -54,28 +54,21 @@
             <a href="#" class="mobile-menu__link">Home</a>
         </li>
         <li class="mobile-menu__item">
-            <a href="#about" onclick="slowScroll('#about')" class="mobile-menu__link">About us</a>
+            <a href="#about" class="mobile-menu__link">About us</a>
         </li>
         <li class="mobile-menu__item">
-            <a href="#about" onclick="slowScroll('#about')" class="mobile-menu__link">How it’s made?</a>
+            <a href="#about" class="mobile-menu__link">How it’s made?</a>
         </li>
         <li class="mobile-menu__item">
-            <a href="#products" onclick="slowScroll('#products')"class="mobile-menu__link">Our products</a>
+            <a href="#products" class="mobile-menu__link">Our products</a>
         </li>
         <li class="mobile-menu__item">
-            <a href="#contacts" onclick="slowScroll('#contacts')" class="mobile-menu__link">Contact</a>
+            <a href="#contacts" class="mobile-menu__link">Contact</a>
         </li>
     </ul>
+</div>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
     <script defer="" src="js/mobile-menu.js"></script>
-    <script type="text/javascript">
-        function slowScroll(id) {
-            var offset = 0;
-            $('html, body').animate({
-                scrollTop: $(id).offset().top - offset
-            }, 1000);
-            return false;
-        }
-    </script>
+    <script type="text/javascript"></script>

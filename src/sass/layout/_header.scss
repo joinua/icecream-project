@@ -1,3 +1,6 @@
+.header-container {
+  position: relative;
+}
 .nav {
   display: flex;
   justify-content: space-between;
@@ -51,7 +54,7 @@
 .header-nav {
   display: flex;
   margin: 0 110px;
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1279px) {
     display: none;
   }
 }
@@ -89,7 +92,7 @@
   &:focus {
     background-color: $primary-button-hov;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -107,6 +110,9 @@
   &:hover,
   &:focus {
     background-color: $primary-button-hov;
+  }
+  @media screen and (min-width: 768px) {
+    width: 35vw;
   }
 }
 .button-text {
@@ -136,13 +142,21 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(225, 121, 146, 0.9);
+  background: rgb(225, 121, 146);
   z-index: 999;
   transform: translateX(100%);
   transition: transform 500ms ease-in-out;
+  @media screen and (min-width: 768px) {
+    width: 40vw;
+    transform: translateX(350%);
+    left: 60%;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 .menu__close-icon {
-  position: relative;
+  position: absolute;
   left: 208px;
 }
 .mobile-menu__link {
@@ -164,4 +178,7 @@
 .mobile-menu {
   width: 100vw;
   height: 100vh;
+  @media screen and (min-width: 768px) {
+    width: 40vw;
+  }
 }
