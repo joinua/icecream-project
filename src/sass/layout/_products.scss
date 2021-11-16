@@ -30,7 +30,7 @@ $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg
 
   .products-cards__item {
     min-width: 220px;
-    min-height: 485px;
+    height: 485px;
 
     padding: 161px 40px 41px 40px;
 
@@ -139,31 +139,17 @@ $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg
     }
   }
 
-  //   .product-cards__content {
-  //     width: 200px;
-  //     height: 124px;
-
-  //     margin: 0 auto;
-
-  //     overflow: hidden;
-
-  //   }
-
-  .products-cards__text {
-    @include font(700, 14px, 21px, 0.04em, none, $white-text);
+  .product-cards__content {
+    width: 200px;
+    height: 124px;
+    margin: 0 auto;
+    overflow: hidden;
 
     margin-bottom: 30px;
   }
 
-  .spoiler__text {
-    @include transition('max-height', 350ms, cubic-bezier(0.4, 0, 0.2, 1));
-    overflow: hidden;
-    &[aria-hidden='true'] {
-      max-height: 124px;
-    }
-    &[aria-hidden='false'] {
-      max-height: var(--containerHeight, 1000px);
-    }
+  .products-cards__text {
+    @include font(700, 14px, 21px, 0.04em, none, $white-text);
   }
 }
 
@@ -200,7 +186,7 @@ $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg
     margin: 10px;
 
     min-width: 220px;
-    min-height: 485px;
+    height: 485px;
 
     padding: 152px 11px 40px 11px;
 
@@ -287,28 +273,16 @@ $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg
     margin-bottom: 66px;
   }
 
-  //   .product-cards__content {
-  //     width: 198px;
-  //     height: 124px;
-
-  //     overflow: hidden;
-  //   }
-
-  .products-cards__text {
-    @include font(700, 14px, 25px, 0.04em, none, $white-text);
+  .product-cards__content {
+    width: 198px;
+    height: 124px;
+    overflow: hidden;
 
     margin-bottom: 40px;
   }
 
-  .spoiler__text {
-    @include transition('max-height', 350ms, cubic-bezier(0.4, 0, 0.2, 1));
-    overflow: hidden;
-    &[aria-hidden='true'] {
-      max-height: 124px;
-    }
-    &[aria-hidden='false'] {
-      max-height: var(--containerHeight, 1000px);
-    }
+  .products-cards__text {
+    @include font(700, 14px, 25px, 0.04em, none, $white-text);
   }
 }
 
@@ -342,7 +316,7 @@ $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg
     @include item(30px, 30px, 3, 30px);
 
     min-width: 329px;
-    max-height: 525px;
+    height: 525px;
 
     padding: 163px 44px 50px 44px;
 
@@ -429,28 +403,27 @@ $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg
     margin-bottom: 66px;
   }
 
-  //   .product-cards__content {
-  //     width: 241px;
-  //   }
-
-  .products-cards__text {
-    @include font(700, 16px, 28px, 0.04em, none, $white-text);
-
-    text-align: center;
-
+  .product-cards__content {
+    width: 241px;
+    height: 106px;
+    overflow: hidden;
     margin-bottom: 62px;
   }
 
-  .spoiler__text {
-    @include transition('max-height', 350ms, cubic-bezier(0.4, 0, 0.2, 1));
-    overflow: hidden;
-    &[aria-hidden='true'] {
-      max-height: 106px;
-    }
-    &[aria-hidden='false'] {
-      max-height: var(--containerHeight, 1000px);
-    }
+  .products-cards__text {
+    @include font(700, 16px, 28px, 0.04em, none, $white-text);
+    text-align: center;
   }
+}
+
+.products-cards__item.more-open .product-cards__content {
+  height: auto;
+}
+
+.products-cards__item.more-open {
+  height: auto;
+  transform: scale(1.05, 1.05);
+  @include transition('transform', 500ms, cubic-bezier(0.4, 0, 0.2, 1));
 }
 
 .products-cards__title {
@@ -496,8 +469,8 @@ $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg
   }
 }
 
-.trigger {
-  [data-drawer-showing='true'] & {
-    background-color: $primary-button-hov;
-  }
-}
+// .trigger {
+//   [data-drawer-showing='true'] & {
+//     background-color: $primary-button-hov;
+//   }
+// }
