@@ -6,3 +6,4 @@ import './js/jqwery-scroll.js';
 import './js/readmore.js';
 import './js/scroll-to-top.js';
 import './js/hero-scroll.js';
+import './js/modal-contacts.js';

@@ -218,32 +218,12 @@
   @media screen and (min-width: 1280px) {
     @include font(500, 16px, 29px, normal, none, #907e82);
 
-    @include transition(color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
       color: $products-button-hov;
     }
-  }
-}
-
-.button-thumb {
-  position: absolute;
-
-  left: 50%;
-  bottom: 41px;
-  transform: translate(-50%);
-
-  @media screen and (max-width: 767px) {
-    @include flex(flex, center, center, column, nowrap);
-  }
-
-  @media screen and (min-width: 768px) {
-    bottom: 158px;
-  }
-
-  @media screen and (min-width: 768px) {
-    bottom: 165px;
   }
 }
 
@@ -270,7 +250,7 @@
       margin: 0 15px 0 0;
       width: 198px;
 
-      @include transition(background);
+      transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
       &:hover,
       &:focus {
@@ -291,7 +271,7 @@
   @media screen and (min-width: 1280px) {
     width: 180px;
 
-    @include transition(background);
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -316,54 +296,127 @@
   margin-left: 13.17px;
 }
 
-// .contacts__backdrop {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   z-index: 999;
+.page-wrapper {
+  position: absolute;
 
-//   opacity: 1;
-//   background: rgba(0, 0, 0, 0.2);
-//   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-//     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  left: 50%;
+  bottom: 41px;
+  transform: translate(-50%);
 
-//   &.is-hidden .contacts__modal {
-//     transform: translate(-50%, -50%) scale(0.1);
-//   }
-// }
+  @media screen and (max-width: 767px) {
+    @include flex(flex, center, center, column, nowrap);
+  }
 
-// .is-hidden {
-//   opacity: 0;
-//   pointer-events: none;
-//   visibility: hidden;
-// }
+  @media screen and (min-width: 768px) {
+    bottom: 158px;
+  }
 
-// .contacts__modal {
-//   position: relative;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%) scale(1);
+  @media screen and (min-width: 1280px) {
+    bottom: 165px;
+  }
+}
 
-// max-width: 600px;
-// min-height: 600px;
-// padding: 40px;
-// padding-top: 150px;
-// padding-bottom: 20px;
+.blur-it {
+  filter: blur(4px);
+}
 
-// overflow: hidden;
-// overflow-y: scroll;
+// Modal one
 
-// background: #fff5f6;
-// box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-//   0px 2px 1px rgba(0, 0, 0, 0.2);
-// border-radius: 22px;
+.modal-wrapper-1 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(255, 245, 246, 0.8);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+  z-index: 999;
+}
 
-// transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.modal-wrapper-2 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(255, 245, 246, 0.8);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+  z-index: 999;
+}
 
-// @media screen and (min-width: 1200px) {
-//   min-width: 528px;
-//   min-height: 581px;
-// }
-// }
+.modal-wrapper-1.open-1 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-wrapper-2.open-2 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-contacts {
+  width: 1000px;
+  height: 600px;
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  border-radius: 22px;
+  background: #ffa5ba;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+
+  transform: translate(-50%, -50%);
+}
+
+.modal-wrapper-1.open-1 .modal-contacts {
+  opacity: 1;
+}
+
+.modal-wrapper-2.open-2 .modal-contacts {
+  opacity: 1;
+}
+
+.modal-contacts__close-btn {
+  width: 35px;
+  height: 35px;
+  top: 10px;
+  right: 13px;
+  cursor: pointer;
+  background-color: inherit;
+  border-radius: 50%;
+  box-sizing: border-box;
+  position: absolute;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover,
+  &:focus {
+    background-color: #ffb8ca;
+  }
+}
+
+.modal-contacts__content {
+  padding: 10px;
+}
+
+.modal-contacts__title {
+  font-family: Titan One;
+  text-align: center;
+  @include font(400, 58px, 52px, 0.04em, uppercase, $crimson-text);
+}
+
+.modal-contacts__map {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+  height: 500px;
+  border-radius: 22px;
+}
