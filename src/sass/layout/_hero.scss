@@ -9,6 +9,18 @@
   padding-top: 193px;
   background-color: $bcg-hero;
   text-align: left;
+  overflow: hidden;
+
+  // animation: show 1500ms;
+
+  // @keyframes show {
+  //   from {
+  //     opacity: 0;
+  //   }
+  //   to {
+  //     opacity: 1;
+  //   }
+  // }
 
   @media screen and (min-width: 768px) {
     height: 399px;
@@ -68,15 +80,6 @@
   z-index: 2;
 
   display: flex;
-  margin-top: 19px;
-
-  @media screen and (min-width: 768px) {
-    margin-top: 20px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-top: 25px;
-  }
 }
 
 .btn {
@@ -84,6 +87,7 @@
   border-radius: 20px;
   padding: 9px 15px;
   min-width: 62px;
+  margin-top: 19px;
 
   font-family: inherit;
   @include font(400, 8px, 10px, 0.04em, none, $crimson-text);
@@ -91,33 +95,41 @@
   text-align: center;
   cursor: pointer;
 
-  @include transition('background-color', 350ms, cubic-bezier(0.4, 0, 0.2, 1));
+  @include transition(background-color, 350ms, cubic-bezier(0.4, 0, 0.2, 1));
 
   &:hover,
   &:focus {
     background-color: $primary-button-hov;
   }
 
-  &--products {
-    margin-right: 8px;
-
-    background-color: $products-button;
-    color: $white-text;
-
-    &:hover,
-    &:focus {
-      background-color: $products-button-hov;
-    }
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
   }
 
   @media screen and (min-width: 1280px) {
-    min-width: 104px;
+    min-width: 102px;
+    margin-top: 25px;
     font-size: 14px;
     line-height: 1.286;
   }
+}
 
-  &--products {
-    margin-right: 17px;
+.btn--products {
+  margin-right: 8px;
+
+  background-color: $products-button;
+  color: $white-text;
+
+  @include transition(background-color, 350ms, cubic-bezier(0.4, 0, 0.2, 1));
+
+  &:hover,
+  &:focus {
+    background-color: $products-button-hov;
+    color: $white-text;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 15px;
   }
 }
 
@@ -158,6 +170,7 @@
     position: absolute;
     bottom: 34px;
     left: 154px;
+    z-index: 3;
 
     width: 18px;
     height: 18px;
@@ -192,7 +205,7 @@
   position: absolute;
   bottom: 0;
   right: 32px;
-  z-index: 1;
+  z-index: 2;
 
   @media screen and (min-width: 768px) {
     right: 247px;
@@ -203,22 +216,51 @@
   }
 }
 
-.hero__img-ellipse {
+.hero-circle {
   position: absolute;
-  top: 50%;
-  right: 0;
+  bottom: 75px;
+  right: -62px;
   z-index: 1;
 
-  transform: translateY(-50%);
+  width: 345px;
+  height: 345px;
+  border-radius: 50%;
+  background-color: $pink-text;
 
   @media screen and (min-width: 768px) {
+    top: 50%;
     right: 137px;
+    transform: translateY(-50%);
+
+    width: 345px;
+    height: 345px;
   }
 
   @media screen and (min-width: 1280px) {
     right: 267px;
+
+    width: 538px;
+    height: 538px;
   }
 }
+
+// .hero__img-ellipse {
+//   position: absolute;
+//   bottom: 75px;
+//   right: 0;
+//   z-index: 1;
+
+//   @media screen and (min-width: 768px) {
+//     top: 50%;
+//     right: 137px;
+
+//     transform: translateY(-50%);
+//   }
+
+//   @media screen and (min-width: 1280px) {
+//     right: 267px;
+//   }
+// }
 
 .hero__img-milk {
   @media screen and (max-width: 767px) {
@@ -229,7 +271,7 @@
     position: absolute;
     bottom: 28px;
     left: 32px;
-    z-index: 2;
+    z-index: 3;
   }
 
   @media screen and (min-width: 1280px) {
@@ -246,7 +288,7 @@
     position: absolute;
     bottom: 0;
     right: 34px;
-    z-index: 2;
+    z-index: 3;
   }
 
   @media screen and (min-width: 1280px) {
