@@ -1,4 +1,4 @@
-.header__container {
+.header-container {
   position: relative;
 }
 .nav {
@@ -54,7 +54,7 @@
 .header-nav {
   display: flex;
   margin: 0 110px;
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1279px) {
     display: none;
   }
 }
@@ -92,7 +92,7 @@
   &:focus {
     background-color: $primary-button-hov;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -150,6 +150,9 @@
     width: 40vw;
     transform: translateX(350%);
     left: 60%;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
   }
 }
 .menu__close-icon {
