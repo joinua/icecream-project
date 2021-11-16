@@ -218,7 +218,7 @@
   @media screen and (min-width: 1280px) {
     @include font(500, 16px, 29px, normal, none, #907e82);
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition(color);
 
     &:hover,
     &:focus {
@@ -270,7 +270,7 @@
       margin: 0 15px 0 0;
       width: 198px;
 
-      transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      @include transition(background);
 
       &:hover,
       &:focus {
@@ -291,7 +291,7 @@
   @media screen and (min-width: 1280px) {
     width: 180px;
 
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition(background);
 
     &:hover,
     &:focus {
@@ -346,24 +346,24 @@
 //   left: 50%;
 //   transform: translate(-50%, -50%) scale(1);
 
-  // max-width: 600px;
-  // min-height: 600px;
-  // padding: 40px;
-  // padding-top: 150px;
-  // padding-bottom: 20px;
+// max-width: 600px;
+// min-height: 600px;
+// padding: 40px;
+// padding-top: 150px;
+// padding-bottom: 20px;
 
-  // overflow: hidden;
-  // overflow-y: scroll;
+// overflow: hidden;
+// overflow-y: scroll;
 
-  // background: #fff5f6;
-  // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-  //   0px 2px 1px rgba(0, 0, 0, 0.2);
-  // border-radius: 22px;
+// background: #fff5f6;
+// box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//   0px 2px 1px rgba(0, 0, 0, 0.2);
+// border-radius: 22px;
 
-  // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  // @media screen and (min-width: 1200px) {
-  //   min-width: 528px;
-  //   min-height: 581px;
-  // }
+// @media screen and (min-width: 1200px) {
+//   min-width: 528px;
+//   min-height: 581px;
+// }
 // }
