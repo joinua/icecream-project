@@ -82,7 +82,8 @@
   display: flex;
 }
 
-.header-nav__link.btn {
+.btn {
+  display: block;
   border-radius: 20px;
   padding: 9px 15px;
   min-width: 62px;
@@ -113,7 +114,7 @@
   }
 }
 
-.header-nav__link.btn--products {
+.btn--products {
   margin-right: 8px;
 
   background-color: $products-button;
