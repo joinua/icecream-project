@@ -315,3 +315,55 @@
 .contacts-button__icon--gap {
   margin-left: 13.17px;
 }
+
+// .contacts__backdrop {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   z-index: 999;
+
+//   opacity: 1;
+//   background: rgba(0, 0, 0, 0.2);
+//   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &.is-hidden .contacts__modal {
+//     transform: translate(-50%, -50%) scale(0.1);
+//   }
+// }
+
+// .is-hidden {
+//   opacity: 0;
+//   pointer-events: none;
+//   visibility: hidden;
+// }
+
+// .contacts__modal {
+//   position: relative;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%) scale(1);
+
+  // max-width: 600px;
+  // min-height: 600px;
+  // padding: 40px;
+  // padding-top: 150px;
+  // padding-bottom: 20px;
+
+  // overflow: hidden;
+  // overflow-y: scroll;
+
+  // background: #fff5f6;
+  // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  //   0px 2px 1px rgba(0, 0, 0, 0.2);
+  // border-radius: 22px;
+
+  // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  // @media screen and (min-width: 1200px) {
+  //   min-width: 528px;
+  //   min-height: 581px;
+  // }
+// }
