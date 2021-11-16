@@ -32,6 +32,7 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
+
   @media screen and (min-width: 768px) {
     top: 52px;
     right: 224px;
@@ -70,9 +71,9 @@
   line-height: 21px;
   color: $primary-button;
   margin-top: 50px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include transition(color);
+
   &:hover,
   &:focus {
     color: $crimson-text;
@@ -88,6 +89,9 @@
   width: 159px;
   height: 44px;
   cursor: pointer;
+
+  @include transition(background-color);
+
   &:hover,
   &:focus {
     background-color: $primary-button-hov;
@@ -107,6 +111,9 @@
   margin-left: 21px;
   width: 90%;
   cursor: pointer;
+
+  @include transition(background-color);
+
   &:hover,
   &:focus {
     background-color: $primary-button-hov;
@@ -145,7 +152,9 @@
   background: rgb(225, 121, 146);
   z-index: 999;
   transform: translateX(100%);
-  transition: transform 500ms ease-in-out;
+
+  @include transition(transform, 500ms);
+
   @media screen and (min-width: 768px) {
     width: 40vw;
     transform: translateX(350%);
@@ -166,6 +175,9 @@
   font-size: 14px;
   line-height: 18px;
   color: $primary-button;
+
+  @include transition(color);
+
   &:hover,
   &:focus {
     color: $crimson-text;
