@@ -271,7 +271,7 @@
   @media screen and (min-width: 1280px) {
     width: 180px;
 
-      @include transition(background);
+    @include transition(background);
 
     &:hover,
     &:focus {
@@ -359,8 +359,8 @@
 }
 
 .modal-contacts {
-  width: 1000px;
-  height: 600px;
+  width: 300px;
+  height: 500px;
   display: block;
   position: relative;
   top: 50%;
@@ -371,6 +371,16 @@
   @include transition(all, 500ms);
 
   transform: translate(-50%, -50%);
+
+  @media screen and (min-width: 768px) {
+    width: 720px;
+    height: 600px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1000px;
+    height: 600px;
+  }
 }
 
 .modal-wrapper-1.open-1 .modal-contacts {
@@ -384,8 +394,8 @@
 .modal-contacts__close-btn {
   width: 35px;
   height: 35px;
-  top: 10px;
-  right: 13px;
+  top: -9px;
+  right: -9px;
   cursor: pointer;
   background-color: inherit;
   border-radius: 50%;
@@ -398,6 +408,11 @@
 
   @include transition(background-color);
 
+  @media screen and (min-width: 1280px) {
+    top: 10px;
+    right: 13px;
+  }
+
   &:hover,
   &:focus {
     background-color: #ffb8ca;
@@ -405,21 +420,42 @@
 }
 
 .modal-contacts__content {
-  padding: 10px;
+  @media screen and (min-width: 1280px) {
+    @include font(400, 58px, 52px, 0.04em, uppercase, $crimson-text);
+    padding: 10px;
+  }
 }
 
 .modal-contacts__title {
+  margin-bottom: 10px;
   font-family: 'Titan One', cursive;
   text-align: center;
-  @include font(400, 58px, 52px, 0.04em, uppercase, $crimson-text);
+  @include font(400, 34px, 39px, 0.04em, uppercase, $crimson-text);
+
+  @media screen and (min-width: 1280px) {
+    @include font(400, 58px, 52px, 0.04em, uppercase, $crimson-text);
+    margin-bottom: 20px;
+  }
+}
+
 }
 
 .modal-contacts__map {
-  margin-top: 20px;
+  width: 280px;
+  height: 440px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 900px;
-  height: 500px;
+
   border-radius: 22px;
+
+  @media screen and (min-width: 768px) {
+    width: 680px;
+    height: 530px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 900px;
+    height: 500px;
+  }
 }
