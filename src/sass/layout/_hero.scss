@@ -1,3 +1,12 @@
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .hero {
   background-color: $bcg-hero;
 }
@@ -13,17 +22,6 @@
   @media screen and (max-height: 414px) {
     padding-top: 102px;
   }
-
-  // animation: show 1500ms;
-
-  // @keyframes show {
-  //   from {
-  //     opacity: 0;
-  //   }
-  //   to {
-  //     opacity: 1;
-  //   }
-  // }
 
   @media screen and (min-width: 768px) {
     height: 399px;
@@ -211,6 +209,8 @@
   z-index: 2;
   max-height: 85%;
 
+  animation: show 3000ms ease-in-out;
+
   @media screen and (min-width: 768px) {
     right: 247px;
   }
@@ -230,6 +230,8 @@
   height: 345px;
   border-radius: 50%;
   background-color: $pink-text;
+
+  animation: show 3000ms ease-in-out;
 
   @media screen and (max-height: 414px) {
     top: 50%;
@@ -265,6 +267,8 @@
     bottom: 28px;
     left: 32px;
     z-index: 3;
+
+    animation: show 3000ms ease-in-out;
   }
 
   @media screen and (min-width: 1280px) {
@@ -282,6 +286,8 @@
     bottom: 0;
     right: 34px;
     z-index: 3;
+
+    animation: show 3000ms ease-in-out;
   }
 
   @media screen and (min-width: 1280px) {
