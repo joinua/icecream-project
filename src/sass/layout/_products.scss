@@ -177,7 +177,7 @@ $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg
 
   .products-cards {
     display: flex;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     margin: -10px;
   }
 
