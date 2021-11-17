@@ -34,7 +34,6 @@
   border-radius: 50%;
   border: 3px solid transparent;
   border-top-color: #ba55d3;
-  -webkit-animation: spin 3s linear infinite;
 }
 
 .loader:after {
@@ -47,15 +46,16 @@
   border-radius: 50%;
   border: 3px solid transparent;
   border-top-color: #ff00ff;
-  -webkit-animation: spin 1.5s linear infinite;
 }
 
 .loader:before {
   animation: spin 3s linear infinite;
+  -webkit-animation: spin 3s linear infinite;
 }
 
 .loader:after {
   animation: spin 1.5s linear infinite;
+  -webkit-animation: spin 1.5s linear infinite;
 }
 
 @-webkit-keyframes spin {
