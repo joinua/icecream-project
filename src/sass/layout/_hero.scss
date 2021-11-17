@@ -209,7 +209,7 @@
   z-index: 2;
   max-height: 85%;
 
-  animation: show 3000ms ease-in-out 2000ms;
+  animation: show 3000ms ease-in-out 1000ms;
 
   @media screen and (min-width: 768px) {
     right: 247px;
@@ -231,7 +231,7 @@
   border-radius: 50%;
   background-color: $pink-text;
 
-  animation: show 3000ms ease-in-out 2000ms;
+  animation: show 3000ms ease-in-out 1000ms;
 
   @media screen and (max-height: 414px) {
     top: 50%;
@@ -268,7 +268,7 @@
     left: 32px;
     z-index: 3;
 
-    animation: show 3000ms ease-in-out 2000ms;
+    animation: show 3000ms ease-in-out 1000ms;
   }
 
   @media screen and (min-width: 1280px) {
@@ -287,7 +287,7 @@
     right: 34px;
     z-index: 3;
 
-    animation: show 3000ms ease-in-out 2000ms;
+    animation: show 3000ms ease-in-out 1000ms;
   }
 
   @media screen and (min-width: 1280px) {
