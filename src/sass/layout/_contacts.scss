@@ -218,7 +218,7 @@
   @media screen and (min-width: 1280px) {
     @include font(500, 16px, 29px, normal, none, #907e82);
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition(color);
 
     &:hover,
     &:focus {
@@ -250,7 +250,7 @@
       margin: 0 15px 0 0;
       width: 198px;
 
-      transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      @include transition(background);
 
       &:hover,
       &:focus {
@@ -271,7 +271,7 @@
   @media screen and (min-width: 1280px) {
     width: 180px;
 
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      @include transition(background);
 
     &:hover,
     &:focus {
@@ -331,7 +331,7 @@
   background: rgba(255, 245, 246, 0.8);
   visibility: hidden;
   opacity: 0;
-  transition: all 0.25s ease-in-out;
+  @include transition;
   z-index: 999;
 }
 
@@ -344,7 +344,7 @@
   background: rgba(255, 245, 246, 0.8);
   visibility: hidden;
   opacity: 0;
-  transition: all 0.25s ease-in-out;
+  @include transition;
   z-index: 999;
 }
 
@@ -368,7 +368,7 @@
   border-radius: 22px;
   background: #ffa5ba;
   opacity: 0;
-  transition: all 0.5s ease-in-out;
+  @include transition(all, 500ms);
 
   transform: translate(-50%, -50%);
 }
@@ -395,6 +395,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include transition(background-color);
+
   &:hover,
   &:focus {
     background-color: #ffb8ca;
