@@ -1,4 +1,5 @@
 import './sass/main.scss';
+import './js/preloader.js';
 import './js/slick.min.js';
 import './js/slider.js';
 import './js/modal.js';
