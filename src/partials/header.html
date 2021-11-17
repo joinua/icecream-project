@@ -49,6 +49,41 @@
             <use href="/images/svg/symbol-defs.svg#icon-vector-1"></use>
         </svg>
     </button>
+
+    <!-- Форма контактов в мобильном меню -->
+
+    <div id="form" class="mobile-contacts mobile-contacts-hidden">
+    
+        <h3 class="mobile-contacts__title">Contact us</h3>
+    
+        <form id="icecreamform" method="post" class="mobile-contacts__form" autocomplete="off">
+    
+            <div class="mobile-contacts__group" id="name-form">
+                <label for="name" class="mobile-contacts__label">Your name*</label>
+                <input type="text" id="name" name="name" class="mobile-contacts__input"/>
+            </div>
+    
+            <div class="mobile-contacts__group" id="phone-form">
+                <label for="phone" class="mobile-contacts__label">Your phone*</label>
+                <input type="text" id="phone" name="phone" class="mobile-contacts__input"/>
+            </div>
+    
+            <div class="mobile-contacts__group mobile-contacts__group--email" id="email-form">
+                <label for="email" class="mobile-contacts__label">Your e-mail*</label>
+                <input type="email" id="email" name="email" class="mobile-contacts__input"/>
+            </div>
+    
+            <button class="mobile-contacts__btn submit-btn" data-modal-open type="button">
+                <span class="button-text">Contacts Us</span>
+                <svg class="button__svg">
+                    <use href="/images/svg/symbol-defs.svg#icon-vector-1"></use>
+                </svg>
+            </button>
+        </form>
+    </div>
+
+    <!-- Конец формы -->
+
     <ul class="mobile-menu">
         <li class="mobile-menu__item">
             <a href="#" class="mobile-menu__link">Home</a>

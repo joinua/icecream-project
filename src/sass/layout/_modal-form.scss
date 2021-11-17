@@ -1,0 +1,101 @@
+@media (min-width: 320px) and (max-width: 1279px) {
+  .mobile-contacts {
+    padding: 25px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    @include transition('opacity, max-height');
+  }
+
+  .mobile-contacts-hidden {
+    opacity: 0;
+    max-height: 0;
+    margin: 0;
+  }
+
+  .mobile-contacts-show {
+    margin-top: 35px;
+    opacity: 1;
+    max-height: 360px;
+
+    @include transition('opacity, max-height');
+  }
+
+  .mobile-contacts__form {
+    margin: 0 auto;
+    width: 280px;
+  }
+
+  .mobile-contacts__group {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  .mobile-contacts__group--email {
+    margin-bottom: 30px;
+  }
+
+  .mobile-contacts__title {
+    display: block;
+    text-align: center;
+
+    margin-bottom: 15px;
+
+    font-family: Titan One;
+    @include font(400, 26px, 30px, uppercase, 0.04em, $white-text);
+  }
+
+  .mobile-contacts__input {
+    width: 280px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px;
+
+    @include font(700, 14px, 18px, 0, none, $pink-text);
+    @include transition('border', 250ms);
+  }
+
+  .mobile-contacts__label {
+    width: 300px;
+    @include font(700, 14px, 18px, 0, none, #ffffff);
+  }
+
+  .mobile-contacts__btn {
+    display: block;
+    background-color: $primary-button;
+    border-radius: 22px;
+    width: 250px;
+    height: 44px;
+    cursor: pointer;
+
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    @include transition(background-color);
+
+    &:hover,
+    &:focus {
+      background-color: $primary-button-hov;
+    }
+  }
+
+  .mobile-contacts__group,
+  .formgroup-active,
+  .formgroup-error {
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 6.5%;
+    @include transition('background-image');
+    width: 300px;
+    padding-top: 2px;
+  }
+
+  .formgroup-active {
+    background-image: url('/images/Hero/hero-icecream-mob-1x.png');
+  }
+}
