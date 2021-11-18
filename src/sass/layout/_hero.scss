@@ -37,7 +37,7 @@
 .hero__title {
   position: relative;
   z-index: 3;
-
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   max-width: 218px;
 
   font-family: Titan One;
@@ -75,7 +75,18 @@
     }
   }
 }
-
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .hero__list {
   position: absolute;
   z-index: 3;
@@ -89,7 +100,7 @@
   padding: 9px 15px;
   min-width: 62px;
   margin-top: 19px;
-
+  animation: bounce-top 1.5s both;
   font-family: inherit;
   @include font(400, 8px, 10px, 0.04em, none, $crimson-text);
   background-color: $white-text;
@@ -120,7 +131,7 @@
 
   background-color: $products-button;
   color: $white-text;
-
+  animation: bounce-top 1s both;
   @include transition(background-color);
 
   &:hover,
@@ -133,7 +144,44 @@
     margin-right: 15px;
   }
 }
-
+@keyframes bounce-top {
+  0% {
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
 .hero__text {
   @media screen and (max-width: 767px) {
     display: none;
@@ -258,6 +306,7 @@
 }
 
 .hero__img-milk {
+  animation: vibrate-3 0.5s linear infinite both;
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -295,6 +344,41 @@
   }
 }
 
+@keyframes vibrate-3 {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-2px, -2px);
+  }
+  20% {
+    transform: translate(2px, -2px);
+  }
+  30% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  50% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, -2px);
+  }
+  70% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(-2px, -2px);
+  }
+  90% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 .hero-numbers {
   @media screen and (max-width: 767px) {
     display: none;
@@ -364,11 +448,20 @@
     top: 0;
     right: 0;
     z-index: 2;
-
+    animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
     width: 100%;
     height: 100%;
   }
-
+  @keyframes text-focus-in {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
   .hero-numbers__number {
     @media screen and (max-width: 767px) {
       display: none;
