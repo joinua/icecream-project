@@ -10,11 +10,16 @@ body {
   background-color: #ffffff;
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
+  overflow-x: hidden;
 }
 
-body.modal-open {
-  overflow: hidden;
+html {
+  overflow-x: hidden;
 }
+
+// body.modal-open {
+//   overflow: hidden;
+// }
 
 a {
   text-decoration: none;
