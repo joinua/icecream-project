@@ -63,7 +63,8 @@
   transition: background-color 250ms ease-in-out;
   &:hover {
     background-color: #ffb8ca;
-    cursor: url(https://cdn.custom-cursor.com/db/7507/32/minimal-ice-cream-pointer.png), pointer;
+    cursor: url(https://cdn.custom-cursor.com/db/8927/32/minimal-pink-ice-cream-pointer.png),
+      pointer;
   }
   margin-bottom: 15px;
 }
@@ -122,7 +123,8 @@
   &:focus {
     border-color: $crimson-text;
     background-color: $white-text;
-    cursor: url(https://cdn.custom-cursor.com/db/7507/32/minimal-ice-cream-pointer.png), pointer;
+    cursor: url(https://cdn.custom-cursor.com/db/8927/32/minimal-pink-ice-cream-pointer.png),
+      pointer;
     & + .modal-form__icon {
       fill: #ffa5ba;
     }
@@ -153,7 +155,8 @@
   &:focus {
     border-color: $crimson-text;
     background-color: $white-text;
-    cursor: url(https://cdn.custom-cursor.com/db/7507/32/minimal-ice-cream-pointer.png), pointer;
+    cursor: url(https://cdn.custom-cursor.com/db/8927/32/minimal-pink-ice-cream-pointer.png),
+      pointer;
     // background-color: $white-text;
   }
   &::placeholder {
@@ -229,7 +232,8 @@
   &:hover,
   &:focus {
     background-color: #ec5f7d;
-    cursor: url(https://cdn.custom-cursor.com/db/7507/32/minimal-ice-cream-pointer.png), pointer;
+    cursor: url(https://cdn.custom-cursor.com/db/8927/32/minimal-pink-ice-cream-pointer.png),
+      pointer;
   }
 }
 
