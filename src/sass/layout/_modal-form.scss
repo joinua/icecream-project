@@ -11,12 +11,14 @@
     opacity: 0;
     max-height: 0;
     margin: 0;
+    display: none;
   }
 
   .mobile-contacts-show {
     margin-top: 35px;
     opacity: 1;
     max-height: 360px;
+    display: block;
 
     @include transition('opacity, max-height');
   }
