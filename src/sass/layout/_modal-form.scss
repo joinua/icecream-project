@@ -45,7 +45,7 @@
 
     margin-bottom: 15px;
 
-    font-family: 'Titan One';
+    font-family: 'Titan One', sans-serif;
     @include font(400, 26px, 30px, uppercase, 0.04em, $white-text);
   }
 
