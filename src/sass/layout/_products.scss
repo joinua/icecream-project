@@ -425,7 +425,7 @@ $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg
 .products-cards__item.more-open {
   height: Auto;
   transform: scale(1.05, 1.05);
-  @include transition('transform, max-height', 500ms);
+  @include transition('transform', 500ms);
 }
 
 .products-cards__title {
