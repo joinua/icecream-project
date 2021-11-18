@@ -188,6 +188,7 @@
   font-size: 14px;
   line-height: 18px;
   color: $primary-button;
+  margin-top: 0;
   @include transition(color);
   &:hover,
   &:focus {
