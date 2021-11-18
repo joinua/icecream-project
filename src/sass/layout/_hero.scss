@@ -105,7 +105,7 @@
   @include font(400, 8px, 10px, 0.04em, none, $crimson-text);
   background-color: $white-text;
   text-align: center;
-  cursor: pointer;
+  cursor: url(https://cdn.custom-cursor.com/db/7507/32/minimal-ice-cream-pointer.png), pointer;
 
   @include transition(background-color);
 
