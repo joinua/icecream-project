@@ -51,51 +51,49 @@
 
   .mobile-contacts__input {
     width: 280px;
-    border: none;
-    border-radius: 20px;
+    height: 30px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 10px;
+    background-color: $pink-text;
+    padding-left: 10px;
+    padding-right: 10px;
     outline: none;
-    padding: 10px;
+    transition: border-color 250ms ease-in-out;
+    &:focus {
+      border-color: $white-text;
+      cursor: pointer;
+    }
 
-    @include font(700, 14px, 18px, 0, none, $pink-text);
+    @include font(700, 14px, 18px, 0, none, #ffffff);
     @include transition('border', 250ms);
   }
 
   .mobile-contacts__label {
     width: 300px;
     @include font(700, 14px, 18px, 0, none, #ffffff);
+    margin-bottom: 4px;
   }
 
-  .mobile-contacts__btn {
-    display: block;
-    background-color: $primary-button;
-    border-radius: 22px;
-    width: 250px;
+  .mobile-form__btn {
+    width: 150px;
     height: 44px;
-    cursor: pointer;
 
+    background-color: #ffa5ba;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    border: none;
+    display: block;
     margin: 0 auto;
-    margin-bottom: 20px;
-
-    @include transition(background-color);
-
+    outline: none;
+    transition: background-color 250ms ease-in-out;
     &:hover,
     &:focus {
-      background-color: $primary-button-hov;
+      background-color: #ec5f7d;
+      cursor: pointer;
     }
   }
 
-  .mobile-contacts__group,
-  .formgroup-active,
-  .formgroup-error {
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 6.5%;
-    @include transition('background-image');
-    width: 300px;
-    padding-top: 2px;
-  }
-
-  .formgroup-active {
-    background-image: url('/images/Hero/hero-icecream-mob-1x.png');
+  .submit-btn__text {
+    @include font(700, 16px, 20px, 0, uppercase, #ffffff);
   }
 }
