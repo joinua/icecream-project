@@ -1,0 +1,99 @@
+@media (min-width: 320px) and (max-width: 1279px) {
+  .mobile-contacts {
+    padding: 25px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    @include transition('opacity, max-height');
+  }
+
+  .mobile-contacts-hidden {
+    opacity: 0;
+    max-height: 0;
+    margin: 0;
+  }
+
+  .mobile-contacts-show {
+    margin-top: 35px;
+    opacity: 1;
+    max-height: 360px;
+
+    @include transition('opacity, max-height');
+  }
+
+  .mobile-contacts__form {
+    margin: 0 auto;
+    width: 280px;
+  }
+
+  .mobile-contacts__group {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  .mobile-contacts__group--email {
+    margin-bottom: 30px;
+  }
+
+  .mobile-contacts__title {
+    display: block;
+    text-align: center;
+
+    margin-bottom: 15px;
+
+    font-family: 'Titan One', sans-serif;
+    @include font(400, 26px, 30px, uppercase, 0.04em, $white-text);
+  }
+
+  .mobile-contacts__input {
+    width: 280px;
+    height: 30px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 10px;
+    background-color: $pink-text;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+    transition: border-color 250ms ease-in-out;
+    &:focus {
+      border-color: $white-text;
+      cursor: pointer;
+    }
+
+    @include font(700, 14px, 18px, 0, none, #ffffff);
+    @include transition('border', 250ms);
+  }
+
+  .mobile-contacts__label {
+    width: 300px;
+    @include font(700, 14px, 18px, 0, none, #ffffff);
+    margin-bottom: 4px;
+  }
+
+  .mobile-form__btn {
+    width: 150px;
+    height: 44px;
+
+    background-color: #ffa5ba;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    transition: background-color 250ms ease-in-out;
+    &:hover,
+    &:focus {
+      background-color: #ec5f7d;
+      cursor: pointer;
+    }
+  }
+
+  .submit-btn__text {
+    @include font(700, 16px, 20px, 0, uppercase, #ffffff);
+  }
+}
