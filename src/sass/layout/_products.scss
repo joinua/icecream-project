@@ -40,7 +40,7 @@ $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg
 
     position: relative;
 
-    &:not(:last-child) {
+        &:not(:last-child) {
       margin-bottom: 130px;
     }
   }
