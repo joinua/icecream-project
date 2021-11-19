@@ -48,7 +48,7 @@
     margin-bottom: 15px;
 
     font-family: 'Titan One', sans-serif;
-    @include font(400, 26px, 30px, uppercase, 0.04em, $white-text);
+    @include font(400, 26px, 30px, 0.04em, uppercase, $white-text);
   }
 
   .mobile-contacts__input {
@@ -66,13 +66,12 @@
       cursor: pointer;
     }
 
-    @include font(700, 14px, 18px, 0, none, #ffffff);
-    @include transition('border', 250ms);
+    @include font(700, 14px, 18px, 0, none, $white-text);
   }
 
   .mobile-contacts__label {
     width: 300px;
-    @include font(700, 14px, 18px, 0, none, #ffffff);
+    @include font(700, 14px, 18px, 0, none, $white-text);
     margin-bottom: 4px;
   }
 
@@ -80,7 +79,7 @@
     width: 150px;
     height: 44px;
 
-    background-color: #ffa5ba;
+    background-color: $pink-text;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     border: none;
@@ -90,12 +89,12 @@
     transition: background-color 250ms ease-in-out;
     &:hover,
     &:focus {
-      background-color: #ec5f7d;
+      background-color: $products-button-hov;
       cursor: pointer;
     }
   }
 
   .submit-btn__text {
-    @include font(700, 16px, 20px, 0, uppercase, #ffffff);
+    @include font(700, 16px, 20px, 0, uppercase, $white-text);
   }
 }
