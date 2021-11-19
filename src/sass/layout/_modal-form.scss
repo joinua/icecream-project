@@ -67,7 +67,6 @@
     }
 
     @include font(700, 14px, 18px, 0, none, $white-text);
-    @include transition('border', 250ms);
   }
 
   .mobile-contacts__label {
