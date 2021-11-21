@@ -44,7 +44,7 @@
 
   max-width: 218px;
 
-  font-family: 'Titan One', sans-serif;
+  font-family: 'Titan One', cursive;
   @include font(400, 26px, 30px, 0.04em, uppercase, $white-text);
 
   &--color-pink {
@@ -376,7 +376,7 @@
 
     display: block;
 
-    font-family: 'Titan One', sans-serif;
+    font-family: 'Titan One', cursive;
     @include font(400, 28px, 32px, 0.04em, uppercase, $crimson-text);
 
     @media screen and (min-width: 1280px) {
