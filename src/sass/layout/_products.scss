@@ -13,7 +13,7 @@ $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg
   }
 
   .products__pretitle {
-    font-family: 'Titan One', sans-serif;
+    font-family: 'Titan One', cursive;
     @include font(400, 18px, 21px, 0, uppercase, $pink-text);
     text-align: center;
 
@@ -21,7 +21,7 @@ $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg
   }
 
   .products__title {
-    font-family: 'Titan One', sans-serif;
+    font-family: 'Titan One', cursive;
     @include font(400, 34px, 39px, 0.04em, uppercase, $crimson-text);
     text-align: center;
 
@@ -115,7 +115,7 @@ $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg
   }
 
   .products-cards__title {
-    font-family: 'Titan One', sans-serif;
+    font-family: 'Titan One', cursive;
     @include font(400, 20px, 23px, 0.04em, uppercase, $white-text);
 
     margin-bottom: 68px;
@@ -160,7 +160,7 @@ $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg
   }
 
   .products__pretitle {
-    font-family: 'Titan One', sans-serif;
+    font-family: 'Titan One', cursive;
     @include font(400, 26px, 30px, 0, uppercase, $pink-text);
     text-align: center;
 
@@ -168,7 +168,7 @@ $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg
   }
 
   .products__title {
-    font-family: 'Titan One', sans-serif;
+    font-family: 'Titan One', cursive;
     @include font(400, 48px, 55px, 0.04em, uppercase, $crimson-text);
     text-align: center;
 
@@ -267,7 +267,7 @@ $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg
   }
 
   .products-cards__title {
-    font-family: 'Titan One', sans-serif;
+    font-family: 'Titan One', cursive;
     @include font(400, 20px, 23px, 0.04em, uppercase, $white-text);
 
     margin-bottom: 66px;
@@ -293,7 +293,7 @@ $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg
   }
 
   .products__pretitle {
-    font-family: 'Titan One', sans-serif;
+    font-family: 'Titan One', cursive;
     @include font(400, 30px, 34px, 0, uppercase, $pink-text);
     text-align: center;
 
@@ -301,7 +301,7 @@ $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg
   }
 
   .products__title {
-    font-family: 'Titan One', sans-serif;
+    font-family: 'Titan One', cursive;
     @include font(400, 58px, 66px, 0.04em, uppercase, $crimson-text);
     text-align: center;
 
@@ -399,7 +399,7 @@ $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg
   }
 
   .products-cards__title {
-    font-family: 'Titan One', sans-serif;
+    font-family: 'Titan One', cursive;
     @include font(400, 20px, 23px, 0.04em, uppercase, $white-text);
 
     margin-bottom: 66px;
