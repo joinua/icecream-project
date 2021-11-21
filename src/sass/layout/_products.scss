@@ -13,7 +13,7 @@ $colors: (cream, $cream-bcg), (coffee, $coffe-bcg), (milkshakes, $milkshakes-bcg
   }
 
   .products__pretitle {
-    font-family: 'Titan One', cursivef;
+    font-family: 'Titan One', cursive;
     @include font(400, 18px, 21px, 0, uppercase, $pink-text);
     text-align: center;
 
